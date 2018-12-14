@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3318C8821C443CE0038CB5E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8721C443CE0038CB5E /* FormViewController.swift */; };
 		C382F74C21C4379300886836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382F74B21C4379300886836 /* AppDelegate.swift */; };
-		C382F74E21C4379300886836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382F74D21C4379300886836 /* ViewController.swift */; };
 		C382F75121C4379300886836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382F74F21C4379300886836 /* Main.storyboard */; };
 		C382F75321C4379500886836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C382F75221C4379500886836 /* Assets.xcassets */; };
 		C382F75621C4379500886836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382F75421C4379500886836 /* LaunchScreen.storyboard */; };
 		C382F76121C4379500886836 /* EasynvestSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382F76021C4379500886836 /* EasynvestSimulatorTests.swift */; };
+		FF8D3928B7DE06F1164E0F5B /* Pods_EasynvestSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5012EFFBD9C677420471625E /* Pods_EasynvestSimulator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35060C5265DB3BD8D388BF71 /* Pods-EasynvestSimulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestSimulator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator.debug.xcconfig"; sourceTree = "<group>"; };
+		5012EFFBD9C677420471625E /* Pods_EasynvestSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasynvestSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14250A479C03D274715FCC9 /* Pods-EasynvestSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator.release.xcconfig"; sourceTree = "<group>"; };
+		C3318C8721C443CE0038CB5E /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		C382F74821C4379300886836 /* EasynvestSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasynvestSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C382F74B21C4379300886836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C382F74D21C4379300886836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C382F75021C4379300886836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C382F75221C4379500886836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C382F75521C4379500886836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +40,7 @@
 		C382F75C21C4379500886836 /* EasynvestSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasynvestSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C382F76021C4379500886836 /* EasynvestSimulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestSimulatorTests.swift; sourceTree = "<group>"; };
 		C382F76221C4379500886836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3471DC99ACC73848DBE0B13 /* Pods_EasynvestSimulatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasynvestSimulatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8D3928B7DE06F1164E0F5B /* Pods_EasynvestSimulator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +62,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16C48057D0CD0A6886EB2723 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35060C5265DB3BD8D388BF71 /* Pods-EasynvestSimulator.debug.xcconfig */,
+				A14250A479C03D274715FCC9 /* Pods-EasynvestSimulator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6848AE2EB1631FB5142EC92F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5012EFFBD9C677420471625E /* Pods_EasynvestSimulator.framework */,
+				E3471DC99ACC73848DBE0B13 /* Pods_EasynvestSimulatorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C382F73F21C4379300886836 = {
 			isa = PBXGroup;
 			children = (
 				C382F74A21C4379300886836 /* EasynvestSimulator */,
 				C382F75F21C4379500886836 /* EasynvestSimulatorTests */,
 				C382F74921C4379300886836 /* Products */,
+				16C48057D0CD0A6886EB2723 /* Pods */,
+				6848AE2EB1631FB5142EC92F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				C382F74B21C4379300886836 /* AppDelegate.swift */,
-				C382F74D21C4379300886836 /* ViewController.swift */,
 				C382F74F21C4379300886836 /* Main.storyboard */,
 				C382F75221C4379500886836 /* Assets.xcassets */,
 				C382F75421C4379500886836 /* LaunchScreen.storyboard */,
 				C382F75721C4379500886836 /* Info.plist */,
+				C3318C8721C443CE0038CB5E /* FormViewController.swift */,
 			);
 			path = EasynvestSimulator;
 			sourceTree = "<group>";
@@ -103,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C382F76521C4379500886836 /* Build configuration list for PBXNativeTarget "EasynvestSimulator" */;
 			buildPhases = (
+				4A3EF0354279A5FEC5EDE463 /* [CP] Check Pods Manifest.lock */,
 				C382F74421C4379300886836 /* Sources */,
 				C382F74521C4379300886836 /* Frameworks */,
 				C382F74621C4379300886836 /* Resources */,
+				EE6043D289C7692E4A3A8440 /* [CP] Embed Pods Frameworks */,
+				C3318C8621C439510038CB5E /* SwiftLint Script */,
 			);
 			buildRules = (
 			);
@@ -192,12 +221,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A3EF0354279A5FEC5EDE463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasynvestSimulator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3318C8621C439510038CB5E /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		EE6043D289C7692E4A3A8440 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C382F74421C4379300886836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C382F74E21C4379300886836 /* ViewController.swift in Sources */,
+				C3318C8821C443CE0038CB5E /* FormViewController.swift in Sources */,
 				C382F74C21C4379300886836 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +452,7 @@
 		};
 		C382F76621C4379500886836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35060C5265DB3BD8D388BF71 /* Pods-EasynvestSimulator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +472,7 @@
 		};
 		C382F76721C4379500886836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A14250A479C03D274715FCC9 /* Pods-EasynvestSimulator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

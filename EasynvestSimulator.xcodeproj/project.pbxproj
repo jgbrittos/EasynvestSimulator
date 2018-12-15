@@ -7,7 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3318C8821C443CE0038CB5E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8721C443CE0038CB5E /* FormViewController.swift */; };
+		C3318C9021C45C680038CB5E /* FormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8A21C45C670038CB5E /* FormPresenter.swift */; };
+		C3318C9121C45C680038CB5E /* FormWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8B21C45C670038CB5E /* FormWorker.swift */; };
+		C3318C9221C45C680038CB5E /* FormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8C21C45C670038CB5E /* FormRouter.swift */; };
+		C3318C9321C45C680038CB5E /* FormModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8D21C45C670038CB5E /* FormModels.swift */; };
+		C3318C9421C45C680038CB5E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8E21C45C680038CB5E /* FormViewController.swift */; };
+		C3318C9521C45C680038CB5E /* FormInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8F21C45C680038CB5E /* FormInteractor.swift */; };
+		C3318C9721C45E300038CB5E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C9621C45E300038CB5E /* UIViewController+Extension.swift */; };
+		C3318CA921C4645B0038CB5E /* DependencyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C9A21C4645A0038CB5E /* DependencyProtocols.swift */; };
+		C3318CAB21C4645B0038CB5E /* JGLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C9D21C4645B0038CB5E /* JGLoggerProtocol.swift */; };
+		C3318CAC21C4645B0038CB5E /* ConsoleLoggerDII.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C9E21C4645B0038CB5E /* ConsoleLoggerDII.swift */; };
+		C3318CAD21C4645B0038CB5E /* ConsoleLogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CA021C4645B0038CB5E /* ConsoleLogBuilder.swift */; };
+		C3318CAF21C4645B0038CB5E /* LogBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CA221C4645B0038CB5E /* LogBuilderProtocol.swift */; };
+		C3318CB021C4645B0038CB5E /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CA321C4645B0038CB5E /* DependencyInjection.swift */; };
+		C3318CB121C4645B0038CB5E /* JGNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CA521C4645B0038CB5E /* JGNetworkProtocol.swift */; };
+		C3318CB321C4645B0038CB5E /* NetworkDII.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CA721C4645B0038CB5E /* NetworkDII.swift */; };
+		C3318CB821C4992D0038CB5E /* FormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CB721C4992D0038CB5E /* FormatterHelper.swift */; };
+		C3318CC121C49D950038CB5E /* SimulationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CBB21C49D950038CB5E /* SimulationPresenter.swift */; };
+		C3318CC221C49D950038CB5E /* SimulationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CBC21C49D950038CB5E /* SimulationWorker.swift */; };
+		C3318CC321C49D950038CB5E /* SimulationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CBD21C49D950038CB5E /* SimulationRouter.swift */; };
+		C3318CC421C49D950038CB5E /* SimulationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CBE21C49D950038CB5E /* SimulationModels.swift */; };
+		C3318CC521C49D950038CB5E /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CBF21C49D950038CB5E /* SimulationViewController.swift */; };
+		C3318CC621C49D950038CB5E /* SimulationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CC021C49D950038CB5E /* SimulationInteractor.swift */; };
 		C382F74C21C4379300886836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382F74B21C4379300886836 /* AppDelegate.swift */; };
 		C382F75121C4379300886836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382F74F21C4379300886836 /* Main.storyboard */; };
 		C382F75321C4379500886836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C382F75221C4379500886836 /* Assets.xcassets */; };
@@ -30,7 +51,28 @@
 		35060C5265DB3BD8D388BF71 /* Pods-EasynvestSimulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestSimulator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator.debug.xcconfig"; sourceTree = "<group>"; };
 		5012EFFBD9C677420471625E /* Pods_EasynvestSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasynvestSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14250A479C03D274715FCC9 /* Pods-EasynvestSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator.release.xcconfig"; sourceTree = "<group>"; };
-		C3318C8721C443CE0038CB5E /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		C3318C8A21C45C670038CB5E /* FormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenter.swift; sourceTree = "<group>"; };
+		C3318C8B21C45C670038CB5E /* FormWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormWorker.swift; sourceTree = "<group>"; };
+		C3318C8C21C45C670038CB5E /* FormRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRouter.swift; sourceTree = "<group>"; };
+		C3318C8D21C45C670038CB5E /* FormModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModels.swift; sourceTree = "<group>"; };
+		C3318C8E21C45C680038CB5E /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		C3318C8F21C45C680038CB5E /* FormInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInteractor.swift; sourceTree = "<group>"; };
+		C3318C9621C45E300038CB5E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C3318C9A21C4645A0038CB5E /* DependencyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyProtocols.swift; sourceTree = "<group>"; };
+		C3318C9D21C4645B0038CB5E /* JGLoggerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGLoggerProtocol.swift; sourceTree = "<group>"; };
+		C3318C9E21C4645B0038CB5E /* ConsoleLoggerDII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLoggerDII.swift; sourceTree = "<group>"; };
+		C3318CA021C4645B0038CB5E /* ConsoleLogBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogBuilder.swift; sourceTree = "<group>"; };
+		C3318CA221C4645B0038CB5E /* LogBuilderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogBuilderProtocol.swift; sourceTree = "<group>"; };
+		C3318CA321C4645B0038CB5E /* DependencyInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		C3318CA521C4645B0038CB5E /* JGNetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGNetworkProtocol.swift; sourceTree = "<group>"; };
+		C3318CA721C4645B0038CB5E /* NetworkDII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDII.swift; sourceTree = "<group>"; };
+		C3318CB721C4992D0038CB5E /* FormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterHelper.swift; sourceTree = "<group>"; };
+		C3318CBB21C49D950038CB5E /* SimulationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationPresenter.swift; sourceTree = "<group>"; };
+		C3318CBC21C49D950038CB5E /* SimulationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationWorker.swift; sourceTree = "<group>"; };
+		C3318CBD21C49D950038CB5E /* SimulationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationRouter.swift; sourceTree = "<group>"; };
+		C3318CBE21C49D950038CB5E /* SimulationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationModels.swift; sourceTree = "<group>"; };
+		C3318CBF21C49D950038CB5E /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		C3318CC021C49D950038CB5E /* SimulationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationInteractor.swift; sourceTree = "<group>"; };
 		C382F74821C4379300886836 /* EasynvestSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasynvestSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C382F74B21C4379300886836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C382F75021C4379300886836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +122,100 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C3318C8921C45C430038CB5E /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				C3318C8E21C45C680038CB5E /* FormViewController.swift */,
+				C3318C8F21C45C680038CB5E /* FormInteractor.swift */,
+				C3318C8A21C45C670038CB5E /* FormPresenter.swift */,
+				C3318C8C21C45C670038CB5E /* FormRouter.swift */,
+				C3318C8B21C45C670038CB5E /* FormWorker.swift */,
+				C3318C8D21C45C670038CB5E /* FormModels.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		C3318C9821C4616C0038CB5E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C382F75221C4379500886836 /* Assets.xcassets */,
+				C382F75421C4379500886836 /* LaunchScreen.storyboard */,
+				C382F75721C4379500886836 /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C3318C9921C461770038CB5E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C3318CB621C467F10038CB5E /* DependencyInjection */,
+				C3318C9621C45E300038CB5E /* UIViewController+Extension.swift */,
+				C3318CB721C4992D0038CB5E /* FormatterHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C3318C9B21C4645B0038CB5E /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				C3318C9D21C4645B0038CB5E /* JGLoggerProtocol.swift */,
+				C3318C9E21C4645B0038CB5E /* ConsoleLoggerDII.swift */,
+				C3318C9F21C4645B0038CB5E /* LogBuilder */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		C3318C9F21C4645B0038CB5E /* LogBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				C3318CA021C4645B0038CB5E /* ConsoleLogBuilder.swift */,
+				C3318CA221C4645B0038CB5E /* LogBuilderProtocol.swift */,
+			);
+			path = LogBuilder;
+			sourceTree = "<group>";
+		};
+		C3318CA421C4645B0038CB5E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				C3318CA721C4645B0038CB5E /* NetworkDII.swift */,
+				C3318CA521C4645B0038CB5E /* JGNetworkProtocol.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		C3318CB621C467F10038CB5E /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				C3318CA321C4645B0038CB5E /* DependencyInjection.swift */,
+				C3318C9A21C4645A0038CB5E /* DependencyProtocols.swift */,
+				C3318CA421C4645B0038CB5E /* NetworkManager */,
+				C3318C9B21C4645B0038CB5E /* Logging */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		C3318CB921C49D670038CB5E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C3318C8921C45C430038CB5E /* Form */,
+				C3318CBA21C49D6F0038CB5E /* Simulation */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C3318CBA21C49D6F0038CB5E /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				C3318CBF21C49D950038CB5E /* SimulationViewController.swift */,
+				C3318CBB21C49D950038CB5E /* SimulationPresenter.swift */,
+				C3318CBC21C49D950038CB5E /* SimulationWorker.swift */,
+				C3318CBD21C49D950038CB5E /* SimulationRouter.swift */,
+				C3318CBE21C49D950038CB5E /* SimulationModels.swift */,
+				C3318CC021C49D950038CB5E /* SimulationInteractor.swift */,
+			);
+			path = Simulation;
+			sourceTree = "<group>";
+		};
 		C382F73F21C4379300886836 = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +241,9 @@
 			children = (
 				C382F74B21C4379300886836 /* AppDelegate.swift */,
 				C382F74F21C4379300886836 /* Main.storyboard */,
-				C382F75221C4379500886836 /* Assets.xcassets */,
-				C382F75421C4379500886836 /* LaunchScreen.storyboard */,
-				C382F75721C4379500886836 /* Info.plist */,
-				C3318C8721C443CE0038CB5E /* FormViewController.swift */,
+				C3318CB921C49D670038CB5E /* Scenes */,
+				C3318C9921C461770038CB5E /* Util */,
+				C3318C9821C4616C0038CB5E /* Assets */,
 			);
 			path = EasynvestSimulator;
 			sourceTree = "<group>";
@@ -133,7 +268,6 @@
 				C382F74421C4379300886836 /* Sources */,
 				C382F74521C4379300886836 /* Frameworks */,
 				C382F74621C4379300886836 /* Resources */,
-				EE6043D289C7692E4A3A8440 /* [CP] Embed Pods Frameworks */,
 				C3318C8621C439510038CB5E /* SwiftLint Script */,
 			);
 			buildRules = (
@@ -260,29 +394,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-		EE6043D289C7692E4A3A8440 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "#\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -291,8 +403,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3318C8821C443CE0038CB5E /* FormViewController.swift in Sources */,
+				C3318C9721C45E300038CB5E /* UIViewController+Extension.swift in Sources */,
+				C3318CC521C49D950038CB5E /* SimulationViewController.swift in Sources */,
+				C3318CB321C4645B0038CB5E /* NetworkDII.swift in Sources */,
+				C3318C9221C45C680038CB5E /* FormRouter.swift in Sources */,
+				C3318CAC21C4645B0038CB5E /* ConsoleLoggerDII.swift in Sources */,
+				C3318C9421C45C680038CB5E /* FormViewController.swift in Sources */,
+				C3318CC621C49D950038CB5E /* SimulationInteractor.swift in Sources */,
+				C3318CAD21C4645B0038CB5E /* ConsoleLogBuilder.swift in Sources */,
+				C3318CB021C4645B0038CB5E /* DependencyInjection.swift in Sources */,
+				C3318C9121C45C680038CB5E /* FormWorker.swift in Sources */,
+				C3318CAF21C4645B0038CB5E /* LogBuilderProtocol.swift in Sources */,
 				C382F74C21C4379300886836 /* AppDelegate.swift in Sources */,
+				C3318CB821C4992D0038CB5E /* FormatterHelper.swift in Sources */,
+				C3318C9021C45C680038CB5E /* FormPresenter.swift in Sources */,
+				C3318CA921C4645B0038CB5E /* DependencyProtocols.swift in Sources */,
+				C3318CC121C49D950038CB5E /* SimulationPresenter.swift in Sources */,
+				C3318C9521C45C680038CB5E /* FormInteractor.swift in Sources */,
+				C3318CAB21C4645B0038CB5E /* JGLoggerProtocol.swift in Sources */,
+				C3318CC421C49D950038CB5E /* SimulationModels.swift in Sources */,
+				C3318CB121C4645B0038CB5E /* JGNetworkProtocol.swift in Sources */,
+				C3318C9321C45C680038CB5E /* FormModels.swift in Sources */,
+				C3318CC221C49D950038CB5E /* SimulationWorker.swift in Sources */,
+				C3318CC321C49D950038CB5E /* SimulationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +590,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EPBUFAY79H;
-				INFOPLIST_FILE = EasynvestSimulator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EasynvestSimulator/Assets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,7 +610,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EPBUFAY79H;
-				INFOPLIST_FILE = EasynvestSimulator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EasynvestSimulator/Assets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

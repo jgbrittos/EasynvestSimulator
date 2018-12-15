@@ -5,7 +5,6 @@ target 'EasynvestSimulator' do
   use_frameworks!
 
   # Pods for EasynvestSimulator
-  pod 'Alamofire'
   pod 'SwiftLint'
   
 end

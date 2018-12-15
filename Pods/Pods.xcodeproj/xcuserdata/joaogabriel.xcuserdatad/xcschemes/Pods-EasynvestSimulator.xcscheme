@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6A15494D07C89A5D4EF73EABD830BC1F"
+               BlueprintIdentifier = "D6939313B6CD83547E693A2728114253"
                BuildableName = "Pods_EasynvestSimulator.framework"
                BlueprintName = "Pods-EasynvestSimulator"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A15494D07C89A5D4EF73EABD830BC1F"
+            BlueprintIdentifier = "D6939313B6CD83547E693A2728114253"
             BuildableName = "Pods_EasynvestSimulator.framework"
             BlueprintName = "Pods-EasynvestSimulator"
             ReferencedContainer = "container:Pods.xcodeproj">

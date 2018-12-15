@@ -19,31 +19,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IaA-fY-8kV">
-                                <rect key="frame" x="10" y="172.33333333333337" width="394" height="318"/>
+                                <rect key="frame" x="10" y="190.33333333333337" width="394" height="282"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ujJ-Z9-SEj">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="86"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="74"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quanto você gostaria de aplicar? *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xmC-En-CJG">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="37"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vbz-mI-aKc">
-                                                <rect key="frame" x="0.0" y="43" width="394" height="43"/>
+                                                <rect key="frame" x="0.0" y="37" width="394" height="37"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="R$" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkN-qP-Ngf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="42"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="36"/>
                                                         <color key="tintColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Informe o valor total a ser investido" identifier="investedAmount" label="Total a ser investido"/>
                                                         <color key="textColor" red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5a1-nR-C0x">
-                                                        <rect key="frame" x="0.0" y="41.999999999999972" width="394" height="1"/>
+                                                        <rect key="frame" x="0.0" y="35.999999999999972" width="394" height="1"/>
                                                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="9BQ-XQ-4JY"/>
@@ -59,26 +59,26 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="g3D-XD-YxU">
-                                        <rect key="frame" x="0.0" y="115.99999999999997" width="394" height="86"/>
+                                        <rect key="frame" x="0.0" y="103.99999999999997" width="394" height="74"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a data de vencimento do investimento? *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ZF-LT-mwp">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="37"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9qE-XD-xix">
-                                                <rect key="frame" x="0.0" y="43" width="394" height="43"/>
+                                                <rect key="frame" x="0.0" y="37" width="394" height="37"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="dia/mês/ano" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMP-Pi-ZF4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="42"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="36"/>
                                                         <color key="tintColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UL7-Xf-Og2">
-                                                        <rect key="frame" x="0.0" y="42" width="394" height="1"/>
+                                                        <rect key="frame" x="0.0" y="36" width="394" height="1"/>
                                                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="dZO-4P-vHE"/>
@@ -94,26 +94,26 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="C9F-Th-tBP">
-                                        <rect key="frame" x="0.0" y="232" width="394" height="86"/>
+                                        <rect key="frame" x="0.0" y="207.99999999999997" width="394" height="74.000000000000028"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual o percentual do CDI do investimento? *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJz-fA-Q1y">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="37"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Am-67-9xr">
-                                                <rect key="frame" x="0.0" y="43" width="394" height="43"/>
+                                                <rect key="frame" x="0.0" y="37" width="394" height="37"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="100%" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-yP-U5T">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="42"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="36"/>
                                                         <color key="tintColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMv-y9-8eZ">
-                                                        <rect key="frame" x="0.0" y="42" width="394" height="1"/>
+                                                        <rect key="frame" x="0.0" y="36" width="394" height="1"/>
                                                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="MJN-V3-EeP"/>
@@ -131,7 +131,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuR-W9-cbC">
-                                <rect key="frame" x="30" y="520.33333333333337" width="354" height="50"/>
+                                <rect key="frame" x="30" y="502.33333333333326" width="354" height="50"/>
                                 <color key="backgroundColor" red="0.76470588240000004" green="0.79215686269999996" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bjJ-0I-vAL"/>
@@ -145,6 +145,10 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="simulate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDS-Kj-hcG"/>
+                                    <segue destination="bVW-VZ-eBs" kind="show" identifier="Simulation" id="BJI-SE-sgj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -160,11 +164,42 @@
                     </view>
                     <connections>
                         <outlet property="investedAmountTextField" destination="kkN-qP-Ngf" id="MQc-Oc-TY5"/>
+                        <outlet property="maturityDateTextField" destination="jMP-Pi-ZF4" id="fzf-Z9-vPQ"/>
+                        <outlet property="rateTextField" destination="Vaj-yP-U5T" id="YTP-Cb-kNZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-7.2463768115942031" y="133.25892857142856"/>
+        </scene>
+        <!--Simulation View Controller-->
+        <scene sceneID="wP3-Bi-LjR">
+            <objects>
+                <viewController storyboardIdentifier="SimulationViewController" id="bVW-VZ-eBs" customClass="SimulationViewController" customModule="EasynvestSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V8H-Cn-Vkr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2N-kA-VGy">
+                                <rect key="frame" x="184" y="353" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="simulateAgain:" destination="bVW-VZ-eBs" eventType="touchUpInside" id="ljF-KE-n8d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ig2-XP-exU"/>
+                    </view>
+                    <connections>
+                        <segue destination="AOi-FB-pJ9" kind="unwind" identifier="unwindToFormVC" unwindAction="unwindToFormVCWithSegue:" id="o0c-Dk-Klr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbe-fw-aHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AOi-FB-pJ9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="133"/>
         </scene>
     </scenes>
 </document>

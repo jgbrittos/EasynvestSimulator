@@ -1,9 +1,9 @@
 //
 //  ConsoleLogBuilder.swift
-//  zimcorretor
+//  EasynvestSimulator
 //
-//  Created by João Gabriel on 28/09/18.
-//  Copyright © 2018 João Gabriel de Britto e Silva. All rights reserved.
+//  Created by João Gabriel on 14/12/18.
+//  Copyright (c) 2018 João Gabriel de Britto e Silva. All rights reserved.
 //
 
 import Foundation

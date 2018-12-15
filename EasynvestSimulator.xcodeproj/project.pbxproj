@@ -29,6 +29,8 @@
 		C382F75321C4379500886836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C382F75221C4379500886836 /* Assets.xcassets */; };
 		C382F75621C4379500886836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382F75421C4379500886836 /* LaunchScreen.storyboard */; };
 		C382F76121C4379500886836 /* EasynvestSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382F76021C4379500886836 /* EasynvestSimulatorTests.swift */; };
+		C397792D21C5A82200CA2D45 /* MaskHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397792C21C5A82200CA2D45 /* MaskHelper.swift */; };
+		C397792F21C5AACD00CA2D45 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397792E21C5AACD00CA2D45 /* String+Extension.swift */; };
 		FF8D3928B7DE06F1164E0F5B /* Pods_EasynvestSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5012EFFBD9C677420471625E /* Pods_EasynvestSimulator.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		C382F75C21C4379500886836 /* EasynvestSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasynvestSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C382F76021C4379500886836 /* EasynvestSimulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestSimulatorTests.swift; sourceTree = "<group>"; };
 		C382F76221C4379500886836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C397792C21C5A82200CA2D45 /* MaskHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskHelper.swift; sourceTree = "<group>"; };
+		C397792E21C5AACD00CA2D45 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E3471DC99ACC73848DBE0B13 /* Pods_EasynvestSimulatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasynvestSimulatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,8 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				C3318CB621C467F10038CB5E /* DependencyInjection */,
-				C3318C9621C45E300038CB5E /* UIViewController+Extension.swift */,
-				C3318CB721C4992D0038CB5E /* FormatterHelper.swift */,
+				C397793021C5AAEA00CA2D45 /* Extensions */,
+				C397793121C5AAF100CA2D45 /* Helpers */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -240,6 +244,24 @@
 				C382F76221C4379500886836 /* Info.plist */,
 			);
 			path = EasynvestSimulatorTests;
+			sourceTree = "<group>";
+		};
+		C397793021C5AAEA00CA2D45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3318C9621C45E300038CB5E /* UIViewController+Extension.swift */,
+				C397792E21C5AACD00CA2D45 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C397793121C5AAF100CA2D45 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C3318CB721C4992D0038CB5E /* FormatterHelper.swift */,
+				C397792C21C5A82200CA2D45 /* MaskHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,9 +414,11 @@
 				C3318CC521C49D950038CB5E /* SimulationViewController.swift in Sources */,
 				C3318CB321C4645B0038CB5E /* NetworkDII.swift in Sources */,
 				C3318C9221C45C680038CB5E /* FormRouter.swift in Sources */,
+				C397792D21C5A82200CA2D45 /* MaskHelper.swift in Sources */,
 				C3318CAC21C4645B0038CB5E /* ConsoleLoggerDII.swift in Sources */,
 				C3318C9421C45C680038CB5E /* FormViewController.swift in Sources */,
 				C3318CAD21C4645B0038CB5E /* ConsoleLogBuilder.swift in Sources */,
+				C397792F21C5AACD00CA2D45 /* String+Extension.swift in Sources */,
 				C3318CB021C4645B0038CB5E /* DependencyInjection.swift in Sources */,
 				C3318C9121C45C680038CB5E /* FormWorker.swift in Sources */,
 				C3318CAF21C4645B0038CB5E /* LogBuilderProtocol.swift in Sources */,

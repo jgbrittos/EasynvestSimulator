@@ -40,7 +40,7 @@
                                                         <accessibility key="accessibilityConfiguration" hint="Informe o valor total a ser investido" identifier="investedAmount" label="Total a ser investido"/>
                                                         <color key="textColor" red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5a1-nR-C0x">
                                                         <rect key="frame" x="0.0" y="36" width="355" height="1"/>
@@ -70,12 +70,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9qE-XD-xix">
                                                 <rect key="frame" x="0.0" y="37" width="355" height="37"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="12/12/2019" placeholder="dia/mês/ano" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMP-Pi-ZF4">
+                                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="12/12/2019" placeholder="dia/mês/ano" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMP-Pi-ZF4">
                                                         <rect key="frame" x="0.0" y="0.0" width="355" height="36"/>
                                                         <color key="tintColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UL7-Xf-Og2">
                                                         <rect key="frame" x="0.0" y="36" width="355" height="1"/>
@@ -105,12 +105,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Am-67-9xr">
                                                 <rect key="frame" x="0.0" y="37" width="355" height="37"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="100" placeholder="100%" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-yP-U5T">
+                                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="100" placeholder="100%" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-yP-U5T">
                                                         <rect key="frame" x="0.0" y="0.0" width="355" height="36"/>
                                                         <color key="tintColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMv-y9-8eZ">
                                                         <rect key="frame" x="0.0" y="36" width="355" height="1"/>
@@ -131,28 +131,33 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuR-W9-cbC">
-                                <rect key="frame" x="30" y="471" width="315" height="50"/>
+                                <rect key="frame" x="30" y="471" width="315" height="40"/>
                                 <color key="backgroundColor" red="0.76470588240000004" green="0.79215686269999996" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="bjJ-0I-vAL"/>
+                                    <constraint firstAttribute="height" constant="40" id="bjJ-0I-vAL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <state key="normal" title="Simular">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
+                                        <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="simulate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDS-Kj-hcG"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nhS-bn-Lhm">
+                                <rect key="frame" x="177.5" y="73.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nhS-bn-Lhm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.25" id="AyO-Cx-KSB"/>
                             <constraint firstItem="yuR-W9-cbC" firstAttribute="top" secondItem="IaA-fY-8kV" secondAttribute="bottom" constant="30" id="HNn-vd-b3I"/>
+                            <constraint firstItem="nhS-bn-Lhm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5w-ZI-MQX"/>
                             <constraint firstItem="yuR-W9-cbC" firstAttribute="leading" secondItem="Vsb-b9-jXG" secondAttribute="leading" constant="30" id="T71-Qa-ZjS"/>
                             <constraint firstItem="Vsb-b9-jXG" firstAttribute="trailing" secondItem="yuR-W9-cbC" secondAttribute="trailing" constant="30" id="YDU-ru-5QT"/>
                             <constraint firstItem="Vsb-b9-jXG" firstAttribute="trailing" secondItem="IaA-fY-8kV" secondAttribute="trailing" constant="10" id="jc7-F6-xW1"/>
@@ -163,8 +168,10 @@
                     </view>
                     <connections>
                         <outlet property="investedAmountTextField" destination="kkN-qP-Ngf" id="MQc-Oc-TY5"/>
+                        <outlet property="loading" destination="nhS-bn-Lhm" id="xIb-Fh-5UR"/>
                         <outlet property="maturityDateTextField" destination="jMP-Pi-ZF4" id="fzf-Z9-vPQ"/>
                         <outlet property="rateTextField" destination="Vaj-yP-U5T" id="YTP-Cb-kNZ"/>
+                        <outlet property="simulateButton" destination="yuR-W9-cbC" id="YHu-DZ-Exf"/>
                         <segue destination="bVW-VZ-eBs" kind="show" identifier="Simulation" id="nmr-Pb-Fnu"/>
                     </connections>
                 </viewController>
@@ -197,35 +204,120 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p9D-pi-QIY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rendimento total de R$ 88,69" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p9D-pi-QIY">
                                         <rect key="frame" x="0.0" y="49.5" width="315" height="13.5"/>
                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Rendimento total de">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.76470588240000004" green="0.79215686269999996" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="11" name=".AppleSystemUIFont"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content=" ">
-                                                <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="11" name=".AppleSystemUIFont"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content="R$ 88,69">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="11" name=".AppleSystemUIFont"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                        <color key="textColor" red="0.76470588240000004" green="0.79215686269999996" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7fJ-eY-ebh">
+                                <rect key="frame" x="30" y="143" width="315" height="112.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YTd-tT-zsN">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor aplicado inicialmente" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-Bk-aaa">
+                                                <rect key="frame" x="0.0" y="0.0" width="212.5" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 1.000,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PdJ-WT-oSV">
+                                                <rect key="frame" x="217.5" y="0.0" width="97.5" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kdK-3I-dFr">
+                                        <rect key="frame" x="0.0" y="24.5" width="315" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor bruto do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3a-LD-Aem">
+                                                <rect key="frame" x="0.0" y="0.0" width="214" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 1.088,69" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vhT-b2-H7K">
+                                                <rect key="frame" x="219" y="0.0" width="96" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SVE-Mb-N0T">
+                                        <rect key="frame" x="0.0" y="49" width="315" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRA-we-Oks">
+                                                <rect key="frame" x="0.0" y="0.0" width="214.5" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 88,69" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsp-GB-nAm">
+                                                <rect key="frame" x="219.5" y="0.0" width="95.5" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pLi-8E-56J">
+                                        <rect key="frame" x="0.0" y="73.5" width="315" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="IR sobre o investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8q-SR-Iny">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 15,52(17,50%)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTJ-UH-8gk">
+                                                <rect key="frame" x="182" y="0.0" width="133" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="i9p-rA-OQf">
+                                        <rect key="frame" x="0.0" y="98" width="315" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor líquido do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBm-DX-yt3">
+                                                <rect key="frame" x="0.0" y="0.0" width="219.5" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 1.073,57" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-G9-qwX">
+                                                <rect key="frame" x="224.5" y="0.0" width="90.5" height="14.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kdK-3I-dFr" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="Fem-yP-JMw"/>
+                                    <constraint firstItem="pLi-8E-56J" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="Jxg-St-h1Q"/>
+                                    <constraint firstItem="SVE-Mb-N0T" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="mx5-Ej-7co"/>
+                                    <constraint firstItem="i9p-rA-OQf" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="y7l-8s-Hp5"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="npa-IG-fRY">
                                 <rect key="frame" x="30" y="285.5" width="315" height="137"/>
@@ -353,125 +445,19 @@
                                     <constraint firstItem="dOl-la-P9K" firstAttribute="height" secondItem="4Eg-ow-Uoq" secondAttribute="height" id="z4A-fQ-3M2"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7fJ-eY-ebh">
-                                <rect key="frame" x="30" y="143" width="315" height="112.5"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YTd-tT-zsN">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="14.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor aplicado inicialmente" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-Bk-aaa">
-                                                <rect key="frame" x="0.0" y="0.0" width="212.5" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 1.000,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PdJ-WT-oSV">
-                                                <rect key="frame" x="217.5" y="0.0" width="97.5" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kdK-3I-dFr">
-                                        <rect key="frame" x="0.0" y="24.5" width="315" height="14.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor bruto do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3a-LD-Aem">
-                                                <rect key="frame" x="0.0" y="0.0" width="214" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 1.088,69" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vhT-b2-H7K">
-                                                <rect key="frame" x="219" y="0.0" width="96" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SVE-Mb-N0T">
-                                        <rect key="frame" x="0.0" y="49" width="315" height="14.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRA-we-Oks">
-                                                <rect key="frame" x="0.0" y="0.0" width="214.5" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 88,69" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsp-GB-nAm">
-                                                <rect key="frame" x="219.5" y="0.0" width="95.5" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pLi-8E-56J">
-                                        <rect key="frame" x="0.0" y="73.5" width="315" height="14.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="IR sobre o investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8q-SR-Iny">
-                                                <rect key="frame" x="0.0" y="0.0" width="177" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 15,52(17,50%)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTJ-UH-8gk">
-                                                <rect key="frame" x="182" y="0.0" width="133" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="i9p-rA-OQf">
-                                        <rect key="frame" x="0.0" y="98" width="315" height="14.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor líquido do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBm-DX-yt3">
-                                                <rect key="frame" x="0.0" y="0.0" width="219.5" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 1.073,57" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-G9-qwX">
-                                                <rect key="frame" x="224.5" y="0.0" width="90.5" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="kdK-3I-dFr" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="Fem-yP-JMw"/>
-                                    <constraint firstItem="pLi-8E-56J" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="Jxg-St-h1Q"/>
-                                    <constraint firstItem="SVE-Mb-N0T" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="mx5-Ej-7co"/>
-                                    <constraint firstItem="i9p-rA-OQf" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="y7l-8s-Hp5"/>
-                                </constraints>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-re-iaT">
-                                <rect key="frame" x="30" y="452.5" width="315" height="50"/>
+                                <rect key="frame" x="30" y="452.5" width="315" height="40"/>
                                 <color key="backgroundColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0de-nO-cso"/>
+                                    <constraint firstAttribute="height" constant="40" id="0de-nO-cso"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <state key="normal" title="Simular novamente">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
+                                        <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>

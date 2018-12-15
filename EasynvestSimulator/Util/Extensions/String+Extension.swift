@@ -13,6 +13,12 @@ extension String {
         return components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
     }
 
+    var sanitizeCurrency: String {
+        return self.replace(symbols: ["R$", " ", "."])
+            .replace(symbols: [","], with: ".")
+            .trimmingCharacters(in: .whitespaces)
+    }
+
     func currencyInputFormatting() -> String {
         var number: NSNumber!
         let formatter = NumberFormatter()
@@ -44,8 +50,8 @@ extension String {
     func replace(symbols: [String], with symbol: String = "") -> String {
         var sanitizedString: String = self
 
-        for symbol in symbols {
-            sanitizedString = sanitizedString.replacingOccurrences(of: symbol, with: symbol)
+        for sym in symbols {
+            sanitizedString = sanitizedString.replacingOccurrences(of: sym, with: symbol)
         }
         return sanitizedString
     }

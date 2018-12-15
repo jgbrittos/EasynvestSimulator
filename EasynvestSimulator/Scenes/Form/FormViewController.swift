@@ -50,16 +50,16 @@ class FormViewController: UIViewController, FormDisplayLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTapScreen()
-        liftViewWithKeyboard(self)
         setupTextFieldsToolbar()
+        setupCurrencyTextFieldsWithMask()
 
-        self.investedAmountTextField.delegate = self
         self.maturityDateTextField.delegate = self
         self.rateTextField.delegate = self
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        liftViewWithKeyboard(self)
         //TODO: DESCOMENTAR ESSA LINHA NO FINAL
         self.cleanForm()
     }
@@ -114,6 +114,8 @@ extension FormViewController {
 
     func displayErrorAlert(with message: String) {
         DispatchQueue.main.async {
+            self.stopLoading()
+            self.simulateButton.isEnabled = true
             let alertController = UIAlertController(title: "Ops...", message: message, preferredStyle: .alert)
 
             let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -123,17 +125,8 @@ extension FormViewController {
     }
 }
 
-// MARK: Currency Textfields
+// MARK: Toolbars
 extension FormViewController {
-    func setupCurrencyRelatedTextFieldsWithMask() {
-        self.investedAmountTextField.addTarget(self, action: #selector(myTextFieldDidChange), for: .allEvents)
-    }
-
-    @objc
-    func myTextFieldDidChange(_ textField: UITextField) {
-        guard textField.text?.currencyInputFormatting() != nil else { return }
-    }
-
     func setupTextFieldsToolbar() {
         self.addToolbarTo(textField: investedAmountTextField)
         self.addToolbarTo(textField: maturityDateTextField)
@@ -183,13 +176,22 @@ extension FormViewController {
     }
 }
 
+// MARK: Masks
 extension FormViewController: UITextFieldDelegate {
+    func setupCurrencyTextFieldsWithMask() {
+        self.investedAmountTextField.addTarget(self, action: #selector(myTextFieldDidChange), for: .editingChanged)
+    }
+
+    @objc
+    func myTextFieldDidChange(_ textField: UITextField) {
+        if let investedAmount = textField.text?.currencyInputFormatting() {
+            textField.text = investedAmount
+        }
+    }
+
     func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,
                    replacementString string: String) -> Bool {
-        if textField == self.investedAmountTextField {
-        }
-
         if textField == self.maturityDateTextField {
             return Mask.date(textField, shouldChangeCharactersIn: range, replacementString: string)
         }

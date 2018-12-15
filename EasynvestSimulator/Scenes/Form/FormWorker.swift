@@ -63,7 +63,7 @@ class FormWorker: NetworkDependency, ConsoleLogDependency {
             return 0.0
         }
 
-        return Double(investedAmount) ?? 0.0
+        return Double(investedAmount.sanitizeCurrency) ?? 0.0
     }
 
     private func checkAndConvertRate(rate: String?) -> Int {

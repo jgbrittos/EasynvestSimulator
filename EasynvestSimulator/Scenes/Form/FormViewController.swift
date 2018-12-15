@@ -196,9 +196,15 @@ extension FormViewController: UITextFieldDelegate {
             return Mask.date(textField, shouldChangeCharactersIn: range, replacementString: string)
         }
 
-        if textField == self.rateTextField {
-        }
-
         return true
+    }
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == self.rateTextField {
+            textField.text = ""
+            textField.text = textField.text! + "%"
+            textField.selectedTextRange = textField.textRange(from: textField.beginningOfDocument,
+                                                              to: textField.beginningOfDocument)
+        }
     }
 }

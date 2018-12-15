@@ -71,6 +71,6 @@ class FormWorker: NetworkDependency, ConsoleLogDependency {
             return 0
         }
 
-        return Int(rate) ?? 0
+        return Int(rate.sanitizePercentual) ?? 0
     }
 }

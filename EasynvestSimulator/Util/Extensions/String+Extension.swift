@@ -16,7 +16,10 @@ extension String {
     var sanitizeCurrency: String {
         return self.replace(symbols: ["R$", " ", "."])
             .replace(symbols: [","], with: ".")
-            .trimmingCharacters(in: .whitespaces)
+    }
+
+    var sanitizePercentual: String {
+        return self.replace(symbols: ["%"])
     }
 
     func currencyInputFormatting() -> String {
@@ -53,6 +56,7 @@ extension String {
         for sym in symbols {
             sanitizedString = sanitizedString.replacingOccurrences(of: sym, with: symbol)
         }
-        return sanitizedString
+
+        return sanitizedString.trimmingCharacters(in: .whitespaces)
     }
 }

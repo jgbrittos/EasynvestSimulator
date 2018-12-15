@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class FormatterHelper {
     static func convert(date: String, from format: String, to finalFormat: String) -> String {
@@ -26,5 +27,26 @@ class FormatterHelper {
 
     static func formatIn(percent value: Double) -> String {
         return String(format: "%.02f", value) + "%"
+    }
+
+    static func paint(value: String) -> NSAttributedString {
+        let fixedText = "Rendimento total de "
+
+        let gray = UIColor(named: "Gray") ?? .gray
+        let green = UIColor(named: "Green") ?? .green
+
+        let grayText: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: gray]
+        let greenText: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: green]
+
+        let attributedFixedText = NSMutableAttributedString(attributedString: NSAttributedString(string: fixedText))
+        attributedFixedText.addAttributes(grayText, range: NSRange(location: 0, length: attributedFixedText.length))
+
+        let attributedValueText = NSMutableAttributedString(attributedString: NSAttributedString(string: value))
+        attributedValueText.addAttributes(greenText, range: NSRange(location: 0, length: attributedValueText.length))
+
+        let result: NSMutableAttributedString = attributedFixedText
+        result.append(attributedValueText)
+
+        return result
     }
 }

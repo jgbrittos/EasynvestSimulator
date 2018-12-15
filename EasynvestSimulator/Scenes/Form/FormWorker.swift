@@ -12,8 +12,9 @@
 
 import UIKit
 
-class FormWorker: NetworkDependency {
+class FormWorker: NetworkDependency, ConsoleLogDependency {
     private lazy var networkHandler: JGNetwork = network
+    private lazy var consoleLogger: JGLogger = logger
 
     func simulate(with request: Form.Request,
                   success: @escaping (Form.Response) -> Void,
@@ -46,8 +47,7 @@ class FormWorker: NetworkDependency {
                 let formResponse = try JSONDecoder().decode(Form.Response.self, from: result)
                 success(formResponse)
             } catch let error {
-                //TODO: - usar logger aqui
-                print(error.localizedDescription)
+                self.consoleLogger.log(error, with: "[Easynvest/Decode_Error]", and: JGLDefaultOptions)
             }
         }, failure: { (message) in
             fail(message)

@@ -23,7 +23,7 @@ class FormViewController: UIViewController, FormDisplayLogic {
     @IBOutlet weak var rateTextField: UITextField!
 
     var interactor: FormBusinessLogic?
-    var router: (NSObjectProtocol & FormRoutingLogic & FormDataPassing)?
+    var router: (NSObjectProtocol & FormRoutingLogic)?
 
     // MARK: Setup
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -46,7 +46,7 @@ class FormViewController: UIViewController, FormDisplayLogic {
         interactor.presenter = presenter
         presenter.viewController = viewController
         router.viewController = viewController
-        router.dataStore = interactor
+//        router.dataStore = interactor
     }
 
     override func viewDidLoad() {
@@ -82,15 +82,6 @@ class FormViewController: UIViewController, FormDisplayLogic {
             let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alertController.addAction(okAction)
             self.present(alertController, animated: true)
-        }
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let scene = segue.identifier {
-            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-            if let router = router, router.responds(to: selector) {
-                router.perform(selector, with: segue)
-            }
         }
     }
 }

@@ -16,11 +16,7 @@ protocol FormRoutingLogic {
     func routeToSimulationResult(viewModel: Form.ViewModel)
 }
 
-protocol FormDataPassing {
-    var dataStore: FormDataStore? { get }
-}
-
-class FormRouter: NSObject, FormRoutingLogic, FormDataPassing {
+class FormRouter: NSObject, FormRoutingLogic {
     weak var viewController: FormViewController?
     var dataStore: FormDataStore?
 

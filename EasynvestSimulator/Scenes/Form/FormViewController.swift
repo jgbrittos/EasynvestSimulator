@@ -60,7 +60,6 @@ class FormViewController: UIViewController, FormDisplayLogic {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         liftViewWithKeyboard(self)
-        //TODO: DESCOMENTAR ESSA LINHA NO FINAL
         self.cleanForm()
     }
 

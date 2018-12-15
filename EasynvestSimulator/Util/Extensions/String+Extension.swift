@@ -43,8 +43,8 @@ extension String {
 
             let double = (amountWithPrefix as NSString).doubleValue
             number = NSNumber(value: (double / 100))
-        } catch {
-            // TODO: FAZER ALGO A RESPEITO
+        } catch let error {
+            print(error.localizedDescription)
         }
 
         return formatter.string(from: number)!

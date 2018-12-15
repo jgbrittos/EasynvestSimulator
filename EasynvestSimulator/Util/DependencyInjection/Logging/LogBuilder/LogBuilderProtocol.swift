@@ -8,13 +8,13 @@
 
 import Foundation
 
-let JGLDefaultOptions: [JGLOptions] = [.Prefix, .Suffix, .Header, .Footer]
+let JGLDefaultOptions: [JGLOptions] = [.prefix, .suffix, .header, .footer]
 
 enum JGLOptions {
-    case Header
-    case Footer
-    case Prefix
-    case Suffix
+    case header
+    case footer
+    case prefix
+    case suffix
 }
 
 struct JGLDefaultConstants {
@@ -27,10 +27,9 @@ struct JGLDefaultConstants {
 }
 
 protocol JGLogBuilderProtocol {
-    
     var prefixMarker: String { get set }
     var suffixMarker: String { get set }
-    
+
     var defaultHeader: String { get set }
     var defaultFooter: String { get set }
 
@@ -38,29 +37,36 @@ protocol JGLogBuilderProtocol {
     var hasSuffix: Bool { get set }
     var hasHeader: Bool { get set }
     var hasFooter: Bool { get set }
-    
+
     var log: String { get set }
-    
-    @discardableResult func set(header: String?) -> JGLogBuilderProtocol
-    @discardableResult func set(_: String) -> JGLogBuilderProtocol
-    @discardableResult func set(logs: String...) -> JGLogBuilderProtocol
-    @discardableResult func set(logs: [String]) -> JGLogBuilderProtocol
-    @discardableResult func set(footer: String?) -> JGLogBuilderProtocol
-    @discardableResult func with(_ options: [JGLOptions]) -> JGLogBuilderProtocol
-    @discardableResult func with(prefix: String) -> JGLogBuilderProtocol
-    @discardableResult func with(suffix: String) -> JGLogBuilderProtocol
+
+    @discardableResult
+    func set(header: String?) -> JGLogBuilderProtocol
+    @discardableResult
+    func set(_: String) -> JGLogBuilderProtocol
+    @discardableResult
+    func set(logs: String...) -> JGLogBuilderProtocol
+    @discardableResult
+    func set(logs: [String]) -> JGLogBuilderProtocol
+    @discardableResult
+    func set(footer: String?) -> JGLogBuilderProtocol
+    @discardableResult
+    func with(_ options: [JGLOptions]) -> JGLogBuilderProtocol
+    @discardableResult
+    func with(prefix: String) -> JGLogBuilderProtocol
+    @discardableResult
+    func with(suffix: String) -> JGLogBuilderProtocol
 
     func build() -> String
 }
 
 extension String {
-    
     mutating func append(prefix: String, if hasPrefix: Bool) {
         if hasPrefix {
             self.append(prefix)
         }
     }
-    
+
     mutating func append(suffix: String, if hasSuffix: Bool) {
         if hasSuffix {
             self.append(suffix)
@@ -72,7 +78,7 @@ extension Dictionary {
     var toJson: String {
         do {
             let json = try JSONSerialization.data(withJSONObject: self, options: .prettyPrinted)
-            
+
             if let jsonString = String(data: json, encoding: .utf8) {
                 return jsonString
             } else {
@@ -85,13 +91,13 @@ extension Dictionary {
 
     func merge(with dictionary: [Key: Value]) -> [Key: Value] {
         var mergedDict: [Key: Value] = [:]
-        
+
         [self, dictionary].forEach { dict in
             for (key, value) in dict {
                 mergedDict[key] = value
             }
         }
-        
+
         return mergedDict
     }
 }
@@ -99,7 +105,8 @@ extension Dictionary {
 extension Data {
     var toJson: String {
         do {
-            let jsonResponse = try JSONSerialization.data(withJSONObject: JSONSerialization.jsonObject(with: self, options: []), options: .prettyPrinted)
+            let jsonObject = try JSONSerialization.jsonObject(with: self, options: [])
+            let jsonResponse = try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted)
 
             if let jsonString = String(data: jsonResponse, encoding: .utf8) {
                 return jsonString

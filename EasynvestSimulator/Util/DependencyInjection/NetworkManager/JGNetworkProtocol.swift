@@ -14,6 +14,9 @@ typealias JGNetworkCompletionFailure = (_ message: String) -> Void
 
 protocol JGNetwork {
     var logger: JGLogger { get }
-    
-    func getRequest(for url: String, with parameters: AnyParameters, success: @escaping JGNetworkCompletionSuccess, failure: @escaping JGNetworkCompletionFailure)
+
+    func getRequest(for url: String,
+                    with parameters: AnyParameters,
+                    success: @escaping JGNetworkCompletionSuccess,
+                    failure: @escaping JGNetworkCompletionFailure)
 }

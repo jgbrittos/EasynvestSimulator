@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-fileprivate struct DependencyInjector {
+private struct DependencyInjector {
     static var dependencies: Dependency = CoreDependency()
     private init() {}
 }
@@ -36,7 +36,7 @@ extension UIApplicationDelegate {
     //This method sets up the Dependency Injector singleton
     //at application begining at application(_:willFinishLaunchingWithOptions:)
     //with a new instance of a Dependency container
-    
+
     func configure(dependency: Dependency) {
         DependencyInjector.dependencies = dependency
     }

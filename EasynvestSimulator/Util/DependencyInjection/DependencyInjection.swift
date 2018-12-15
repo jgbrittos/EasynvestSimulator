@@ -15,11 +15,10 @@ protocol Dependency {
 }
 
 class CoreDependency: Dependency {
-    
     var consoleLogger: JGLogger {
         return ConsoleLoggerDII()
     }
-    
+
     var network: JGNetwork {
         return NetworkDII(logHandler: consoleLogger)
     }

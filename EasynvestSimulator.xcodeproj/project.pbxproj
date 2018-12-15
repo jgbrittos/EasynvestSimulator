@@ -23,12 +23,7 @@
 		C3318CB121C4645B0038CB5E /* JGNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CA521C4645B0038CB5E /* JGNetworkProtocol.swift */; };
 		C3318CB321C4645B0038CB5E /* NetworkDII.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CA721C4645B0038CB5E /* NetworkDII.swift */; };
 		C3318CB821C4992D0038CB5E /* FormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CB721C4992D0038CB5E /* FormatterHelper.swift */; };
-		C3318CC121C49D950038CB5E /* SimulationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CBB21C49D950038CB5E /* SimulationPresenter.swift */; };
-		C3318CC221C49D950038CB5E /* SimulationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CBC21C49D950038CB5E /* SimulationWorker.swift */; };
-		C3318CC321C49D950038CB5E /* SimulationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CBD21C49D950038CB5E /* SimulationRouter.swift */; };
-		C3318CC421C49D950038CB5E /* SimulationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CBE21C49D950038CB5E /* SimulationModels.swift */; };
 		C3318CC521C49D950038CB5E /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CBF21C49D950038CB5E /* SimulationViewController.swift */; };
-		C3318CC621C49D950038CB5E /* SimulationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318CC021C49D950038CB5E /* SimulationInteractor.swift */; };
 		C382F74C21C4379300886836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382F74B21C4379300886836 /* AppDelegate.swift */; };
 		C382F75121C4379300886836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382F74F21C4379300886836 /* Main.storyboard */; };
 		C382F75321C4379500886836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C382F75221C4379500886836 /* Assets.xcassets */; };
@@ -67,12 +62,7 @@
 		C3318CA521C4645B0038CB5E /* JGNetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGNetworkProtocol.swift; sourceTree = "<group>"; };
 		C3318CA721C4645B0038CB5E /* NetworkDII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDII.swift; sourceTree = "<group>"; };
 		C3318CB721C4992D0038CB5E /* FormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterHelper.swift; sourceTree = "<group>"; };
-		C3318CBB21C49D950038CB5E /* SimulationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationPresenter.swift; sourceTree = "<group>"; };
-		C3318CBC21C49D950038CB5E /* SimulationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationWorker.swift; sourceTree = "<group>"; };
-		C3318CBD21C49D950038CB5E /* SimulationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationRouter.swift; sourceTree = "<group>"; };
-		C3318CBE21C49D950038CB5E /* SimulationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationModels.swift; sourceTree = "<group>"; };
 		C3318CBF21C49D950038CB5E /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
-		C3318CC021C49D950038CB5E /* SimulationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationInteractor.swift; sourceTree = "<group>"; };
 		C382F74821C4379300886836 /* EasynvestSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasynvestSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C382F74B21C4379300886836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C382F75021C4379300886836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -207,11 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				C3318CBF21C49D950038CB5E /* SimulationViewController.swift */,
-				C3318CBB21C49D950038CB5E /* SimulationPresenter.swift */,
-				C3318CBC21C49D950038CB5E /* SimulationWorker.swift */,
-				C3318CBD21C49D950038CB5E /* SimulationRouter.swift */,
-				C3318CBE21C49D950038CB5E /* SimulationModels.swift */,
-				C3318CC021C49D950038CB5E /* SimulationInteractor.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -394,7 +379,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -409,7 +394,6 @@
 				C3318C9221C45C680038CB5E /* FormRouter.swift in Sources */,
 				C3318CAC21C4645B0038CB5E /* ConsoleLoggerDII.swift in Sources */,
 				C3318C9421C45C680038CB5E /* FormViewController.swift in Sources */,
-				C3318CC621C49D950038CB5E /* SimulationInteractor.swift in Sources */,
 				C3318CAD21C4645B0038CB5E /* ConsoleLogBuilder.swift in Sources */,
 				C3318CB021C4645B0038CB5E /* DependencyInjection.swift in Sources */,
 				C3318C9121C45C680038CB5E /* FormWorker.swift in Sources */,
@@ -418,14 +402,10 @@
 				C3318CB821C4992D0038CB5E /* FormatterHelper.swift in Sources */,
 				C3318C9021C45C680038CB5E /* FormPresenter.swift in Sources */,
 				C3318CA921C4645B0038CB5E /* DependencyProtocols.swift in Sources */,
-				C3318CC121C49D950038CB5E /* SimulationPresenter.swift in Sources */,
 				C3318C9521C45C680038CB5E /* FormInteractor.swift in Sources */,
 				C3318CAB21C4645B0038CB5E /* JGLoggerProtocol.swift in Sources */,
-				C3318CC421C49D950038CB5E /* SimulationModels.swift in Sources */,
 				C3318CB121C4645B0038CB5E /* JGNetworkProtocol.swift in Sources */,
 				C3318C9321C45C680038CB5E /* FormModels.swift in Sources */,
-				C3318CC221C49D950038CB5E /* SimulationWorker.swift in Sources */,
-				C3318CC321C49D950038CB5E /* SimulationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

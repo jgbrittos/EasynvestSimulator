@@ -147,7 +147,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="simulate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDS-Kj-hcG"/>
-                                    <segue destination="bVW-VZ-eBs" kind="show" identifier="Simulation" id="BJI-SE-sgj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -166,6 +165,7 @@
                         <outlet property="investedAmountTextField" destination="kkN-qP-Ngf" id="MQc-Oc-TY5"/>
                         <outlet property="maturityDateTextField" destination="jMP-Pi-ZF4" id="fzf-Z9-vPQ"/>
                         <outlet property="rateTextField" destination="Vaj-yP-U5T" id="YTP-Cb-kNZ"/>
+                        <segue destination="bVW-VZ-eBs" kind="show" identifier="Simulation" id="nmr-Pb-Fnu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

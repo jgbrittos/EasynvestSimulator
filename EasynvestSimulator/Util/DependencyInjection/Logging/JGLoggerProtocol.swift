@@ -11,13 +11,13 @@ import Foundation
 protocol JGLogger {
     var options: [JGLOptions] { get set }
     var logBuilder: JGLogBuilderProtocol? { get set }
-    
+
     func setup()
 //    func log(_: JGNetworkResponse?, with tag: String?, and options: [JGLOptions])
     func log(_: Error?, with tag: String?, and options: [JGLOptions])
     func log(_: String?, with tag: String?, and options: [JGLOptions])
     func log(_: String..., with tag: String?, and options: [JGLOptions])
-    
+
     /// Override this method with your own logic regarding when console logging should happen
     /// There is a default implementation and, if you want to use it, create a environment variable
     /// named 'shouldPrintLog' and define its value as true. Now inside the implementation of the log
@@ -35,19 +35,19 @@ extension JGLogger {
     func setup() {
         print("No setup method implementation provided")
     }
-    
+
     func log(_ message: String?, with tag: String? = nil, and options: [JGLOptions] = JGLDefaultOptions) {
         print("No log method implementation provided")
     }
-    
+
     func log(_ message: String..., with tag: String? = nil, and options: [JGLOptions] = JGLDefaultOptions) {
         print("No log method implementation provided")
     }
-    
+
     func log(_ error: Error?, with tag: String? = nil, and options: [JGLOptions] = JGLDefaultOptions) {
         print("No log method implementation provided")
     }
-    
+
     func shouldPrintConsoleMessages() -> Bool {
         let shouldPrintLog = ProcessInfo.processInfo.environment["shouldPrintLog"]
         return shouldPrintLog != nil && shouldPrintLog == "true"

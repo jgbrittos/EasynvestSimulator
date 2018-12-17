@@ -9,7 +9,7 @@
 import UIKit
 
 class FormWorker: NetworkDependency, ConsoleLogDependency {
-    private lazy var networkHandler: JGNetwork = network
+    lazy var networkHandler: JGNetwork = network
     private lazy var consoleLogger: JGLogger = logger
 
     func simulate(with request: Form.Request,

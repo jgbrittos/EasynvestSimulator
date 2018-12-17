@@ -71,6 +71,7 @@ class SimulationViewController: UIViewController {
     }
 
     func showBlankView() {
+        // TODO: MOSTRAR DADOS EM BRANCO CASO ALGO DE ERRADO
     }
 
     @IBAction func simulateAgain(_ sender: Any) {

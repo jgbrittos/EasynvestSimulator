@@ -32,7 +32,7 @@ struct Seeds {
         static let request = Form.Request(investedAmount: "100", rate: "100", maturityDate: "15/12/2020")
     }
 
-    struct FormResponse {
+    struct FormResponse: Codable {
         static let response = Form.Response(investmentParameter:
             Form.ResponseInvestmentParameter(investedAmount: 100,
                                              yearlyInterestRate: 7.7734,

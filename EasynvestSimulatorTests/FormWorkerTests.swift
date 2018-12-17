@@ -10,17 +10,81 @@ import XCTest
 @testable import EasynvestSimulator
 
 class FormWorkerTests: XCTestCase {
-    var worker: FormWorker?
+    var worker: FormWorker!
     let timeout = 3.0
 
     override func setUp() {
         worker = FormWorker()
+        worker.networkHandler = NetworkDIIFailureSpy(logger: ConsoleLoggerDII())
         super.setUp()
     }
 
-    override func tearDown() {
-        worker = nil
-        super.tearDown()
+    class NetworkDIISuccessfulSpy: JGNetwork {
+        var logger: JGLogger
+
+        init(logger: JGLogger) {
+            self.logger = logger
+        }
+
+        func getRequest(for url: String,
+                        with parameters: AnyParameters,
+                        success: @escaping JGNetworkCompletionSuccess,
+                        failure: @escaping JGNetworkCompletionFailure) {
+            do {
+                let encoder = JSONEncoder()
+                let data = try encoder.encode(Seeds.FormResponse.response)
+                success(data)
+            } catch {
+                assertionFailure("Encode deveria ter funcionado")
+            }
+        }
+    }
+
+    class NetworkDIIFailureSpy: JGNetwork {
+        var logger: JGLogger
+
+        init(logger: JGLogger) {
+            self.logger = logger
+        }
+
+        func getRequest(for url: String,
+                        with parameters: AnyParameters,
+                        success: @escaping JGNetworkCompletionSuccess,
+                        failure: @escaping JGNetworkCompletionFailure) {
+            failure(ConsoleMessages.kGenericMessage)
+        }
+    }
+
+    // MARK: Correct request data and response
+    func testSimulationWithCorrectData() {
+        let expectation = XCTestExpectation(description: "Testando requisição com dados corretos")
+
+        worker.networkHandler = NetworkDIISuccessfulSpy(logger: ConsoleLoggerDII())
+
+        worker.simulate(with: Seeds.FormRequest.request, success: { (response) in
+            XCTAssertEqual(response.investmentParameter.investedAmount, 100.0)
+            XCTAssertEqual(response.investmentParameter.yearlyInterestRate, 7.7734)
+            XCTAssertEqual(response.investmentParameter.maturityTotalDays, 729)
+            XCTAssertEqual(response.investmentParameter.maturityBusinessDays, 515)
+            XCTAssertEqual(response.investmentParameter.maturityDate, "2020-12-15T00:00:00")
+            XCTAssertEqual(response.investmentParameter.rate, 100)
+            XCTAssertEqual(response.investmentParameter.isTaxFree, false)
+            XCTAssertEqual(response.grossAmount, 116.53)
+            XCTAssertEqual(response.taxesAmount, 2.48)
+            XCTAssertEqual(response.netAmount, 114.05)
+            XCTAssertEqual(response.grossAmountProfit, 16.53)
+            XCTAssertEqual(response.netAmountProfit, 14.05)
+            XCTAssertEqual(response.annualGrossRateProfit, 16.53)
+            XCTAssertEqual(response.monthlyGrossRateProfit, 0.63)
+            XCTAssertEqual(response.dailyGrossRateProfit, 0.000297110353903562)
+            XCTAssertEqual(response.taxesRate, 15.0)
+            XCTAssertEqual(response.rateProfit, 7.7734)
+            XCTAssertEqual(response.annualNetRateProfit, 14.05)
+            expectation.fulfill()
+        }, fail: { _ in
+            assertionFailure("Não devia estar aqui...")
+        })
+        wait(for: [expectation], timeout: timeout)
     }
 
     // MARK: Date
@@ -85,37 +149,4 @@ class FormWorkerTests: XCTestCase {
         })
         wait(for: [expectation], timeout: timeout)
     }
-
-    // MARK: Correct request data and response
-    func testSimulationWithCorrectData() {
-        let expectation = XCTestExpectation(description: "Testando requisição com dados corretos")
-
-        worker?.simulate(with: Seeds.FormRequest.request, success: { (response) in
-            XCTAssertEqual(response.investmentParameter.investedAmount, 100.0)
-            XCTAssertEqual(response.investmentParameter.yearlyInterestRate, 7.7734)
-            XCTAssertEqual(response.investmentParameter.maturityTotalDays, 729)
-            XCTAssertEqual(response.investmentParameter.maturityBusinessDays, 515)
-            XCTAssertEqual(response.investmentParameter.maturityDate, "2020-12-15T00:00:00")
-            XCTAssertEqual(response.investmentParameter.rate, 100)
-            XCTAssertEqual(response.investmentParameter.isTaxFree, false)
-            XCTAssertEqual(response.grossAmount, 116.53)
-            XCTAssertEqual(response.taxesAmount, 2.48)
-            XCTAssertEqual(response.netAmount, 114.05)
-            XCTAssertEqual(response.grossAmountProfit, 16.53)
-            XCTAssertEqual(response.netAmountProfit, 14.05)
-            XCTAssertEqual(response.annualGrossRateProfit, 16.53)
-            XCTAssertEqual(response.monthlyGrossRateProfit, 0.63)
-            XCTAssertEqual(response.dailyGrossRateProfit, 0.000297110353903562)
-            XCTAssertEqual(response.taxesRate, 15.0)
-            XCTAssertEqual(response.rateProfit, 7.7734)
-            XCTAssertEqual(response.annualNetRateProfit, 14.05)
-            expectation.fulfill()
-        }, fail: { _ in
-            assertionFailure("Não devia estar aqui...")
-        })
-        wait(for: [expectation], timeout: timeout)
-    }
-//    func testStringExtension() {
-//        assert("R$ 1.005,00".sanitizeCurrency == "1005.0")
-//    }
 }

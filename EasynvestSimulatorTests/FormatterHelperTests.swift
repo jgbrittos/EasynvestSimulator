@@ -11,7 +11,7 @@ import XCTest
 
 class FormatterHelperTests: XCTestCase {
     func testFormatInCurrency() {
-        XCTAssertNotEqual(FormatterHelper.formatIn(currency: 1000.0), "")
+        XCTAssertEqual(FormatterHelper.formatIn(currency: 1000.0).sanitizeCurrency, "1000.00")
     }
 
     func testFormatInPercentValue() {
@@ -25,7 +25,7 @@ class FormatterHelperTests: XCTestCase {
 }
 /*
  TESTAR O CODIGO A SEGUIR NO PLAYGROUND
- POR ALGUM MOTIVO O PRINT QUE COMPARA SE AS STRINGS SÃO IGUAIS DA SEMPRE FALSE
+ POR ALGUM MOTIVO O ULTIMO PRINT QUE COMPARA SE AS STRINGS SÃO IGUAIS DA SEMPRE FALSE
  O QUE NÃO FAZ SENTIDO, DADO QUE AS STRINGS SÃO EXATAMENTE IGUAIS
  🧐
  
@@ -39,6 +39,6 @@ class FormatterHelperTests: XCTestCase {
  let asd = formatter.string(for: value) ?? "R$ 0,00"
  print(asd)
  print(str)
- print(asd == str)
  print(asd != "R$ 0,00")
+ print(asd == str)
 */

@@ -11,10 +11,13 @@ import XCTest
 
 class FormInteractorTests: XCTestCase {
     var interactor: FormInteractor!
+    var presenter: FormPresenterSpy!
 
     override func setUp() {
         super.setUp()
         interactor = FormInteractor()
+        presenter = FormPresenterSpy()
+        interactor.presenter = presenter
     }
 
     override func tearDown() {
@@ -22,66 +25,65 @@ class FormInteractorTests: XCTestCase {
     }
 
     func testSimulateSuccess() {
-        let presenter = FormPresenterSpy()
-        interactor.presenter = presenter
-        let worker = FormWorkerSpy()
-        interactor.worker = worker
+        interactor.worker = FormWorkerSuccessSpy()
 
-        let request = Form.Request(investedAmount: "100.0", rate: "100", maturityDate: "15/12/2020")
+        interactor.simulateInvestment(with: Seeds.FormRequest.request)
 
-        interactor.simulateInvestment(with: request)
-
-        assert(worker.simulate)
-        assert(presenter.presentDetailScreen)
+        XCTAssertEqual(presenter.response.investmentParameter.investedAmount, 100.00)
+        XCTAssertEqual(presenter.response.investmentParameter.yearlyInterestRate, 7.7734)
+        XCTAssertEqual(presenter.response.investmentParameter.maturityTotalDays, 729)
+        XCTAssertEqual(presenter.response.investmentParameter.maturityBusinessDays, 515)
+        XCTAssertEqual(presenter.response.investmentParameter.maturityDate, "2020-12-15T00:00:00")
+        XCTAssertEqual(presenter.response.investmentParameter.rate, 100)
+        XCTAssertEqual(presenter.response.investmentParameter.isTaxFree, false)
+        XCTAssertEqual(presenter.response.grossAmount, 116.53)
+        XCTAssertEqual(presenter.response.taxesAmount, 2.48)
+        XCTAssertEqual(presenter.response.netAmount, 114.05)
+        XCTAssertEqual(presenter.response.grossAmountProfit, 16.53)
+        XCTAssertEqual(presenter.response.netAmountProfit, 14.05)
+        XCTAssertEqual(presenter.response.annualGrossRateProfit, 16.53)
+        XCTAssertEqual(presenter.response.monthlyGrossRateProfit, 0.63)
+        XCTAssertEqual(presenter.response.dailyGrossRateProfit, 0.000297110353903562)
+        XCTAssertEqual(presenter.response.taxesRate, 15.0)
+        XCTAssertEqual(presenter.response.rateProfit, 7.7734)
+        XCTAssertEqual(presenter.response.annualNetRateProfit, 14.05)
     }
 
-    class FormWorkerSpy: FormWorker {
-        // MARK: Method call expectations
+    func testSimulateFail() {
+        interactor.worker = FormWorkerFailSpy()
 
-        var simulate = false
+        interactor.simulateInvestment(with: Seeds.FormRequest.request)
 
-        // MARK: Spied methods
+        let errorMessage = "MENSAGEM_DE_ERRO"
+        XCTAssertEqual(presenter.errorMessage, errorMessage)
+    }
 
+    class FormWorkerSuccessSpy: FormWorker {
         override func simulate(with request: Form.Request,
                                success: @escaping (Form.Response) -> Void,
                                fail: @escaping (String) -> Void) {
-            simulate = true
+            success(Seeds.FormResponse.response)
+        }
+    }
 
-            let response = Form.Response(investmentParameter:
-                Form.ResponseInvestmentParameter(investedAmount: 100,
-                                                 yearlyInterestRate: 7.7734,
-                                                 maturityTotalDays: 729,
-                                                 maturityBusinessDays: 515,
-                                                 maturityDate: "2020-12-15T00:00:00",
-                                                 rate: 100,
-                                                 isTaxFree: false),
-                                         grossAmount: 116.53,
-                                         taxesAmount: 2.48,
-                                         netAmount: 114.05,
-                                         grossAmountProfit: 16.53,
-                                         netAmountProfit: 14.05,
-                                         annualGrossRateProfit: 16.53,
-                                         monthlyGrossRateProfit: 0.63,
-                                         dailyGrossRateProfit: 0.000297110353903562,
-                                         taxesRate: 15,
-                                         rateProfit: 7.7734,
-                                         annualNetRateProfit: 14.05)
-            success(response)
+    class FormWorkerFailSpy: FormWorker {
+        override func simulate(with request: Form.Request,
+                               success: @escaping (Form.Response) -> Void,
+                               fail: @escaping (String) -> Void) {
+            fail("MENSAGEM_DE_ERRO")
         }
     }
 
     class FormPresenterSpy: FormPresentationLogic {
-        // MARK: Method call expectations
-
-        var presentDetailScreen = false
-
-        // MARK: Spied methods
+        var errorMessage = ""
+        var response: Form.Response!
 
         func presentSimulation(response: Form.Response) {
-            presentDetailScreen = true
+            self.response = response
         }
 
         func presentErrorAlert(message: String) {
+            self.errorMessage = message
         }
     }
 }

@@ -11,7 +11,7 @@ import XCTest
 
 class FormWorkerTests: XCTestCase {
     var worker: FormWorker?
-    let timeout = 2.0
+    let timeout = 3.0
 
     override func setUp() {
         worker = FormWorker()
@@ -27,8 +27,7 @@ class FormWorkerTests: XCTestCase {
     func testSimulationWithEmptyMaturityDate() {
         let expectation = XCTestExpectation(description: "Testando simulação com data vazia")
 
-        let request = Form.Request(investedAmount: "1000.0", rate: "100", maturityDate: "")
-        worker?.simulate(with: request, success: { _ in
+        worker?.simulate(with: Seeds.FormWrongRequest.emptyDateRequest, success: { _ in
             assertionFailure("Não devia estar aqui...")
         }, fail: { (message) in
             XCTAssertEqual(message, FormMessages.kInvalidMaturityDate)
@@ -40,8 +39,7 @@ class FormWorkerTests: XCTestCase {
     func testSimulationWithMaturityDateWithWrongFormat() {
         let expectation = XCTestExpectation(description: "Testando simulação com data em formato incorreto")
 
-        let request = Form.Request(investedAmount: "1000.0", rate: "100", maturityDate: "12122019")
-        worker?.simulate(with: request, success: { _ in
+        worker?.simulate(with: Seeds.FormWrongRequest.wrongDateFormatRequest, success: { _ in
             assertionFailure("Não devia estar aqui...")
         }, fail: { (message) in
             XCTAssertEqual(message, FormMessages.kInvalidMaturityDate)
@@ -53,8 +51,7 @@ class FormWorkerTests: XCTestCase {
     func testSimulationWithInvalidMaturityDate() {
         let expectation = XCTestExpectation(description: "Testando simulação com data invalida")
 
-        let request = Form.Request(investedAmount: "1000", rate: "100", maturityDate: "15/12/1020")
-        worker?.simulate(with: request, success: { _ in
+        worker?.simulate(with: Seeds.FormWrongRequest.wrongDateRequest, success: { _ in
             assertionFailure("Não devia estar aqui...")
         }, fail: { (message) in
             XCTAssertEqual(message, ConsoleMessages.kGenericMessage)
@@ -67,8 +64,7 @@ class FormWorkerTests: XCTestCase {
     func testSimulationWithEmptyInvestedAmount() {
         let expectation = XCTestExpectation(description: "Testando simulação com investimento inicial vazio")
 
-        let request = Form.Request(investedAmount: "", rate: "100", maturityDate: "15/12/2020")
-        worker?.simulate(with: request, success: { _ in
+        worker?.simulate(with: Seeds.FormWrongRequest.emptyInvestedAmountRequest, success: { _ in
             assertionFailure("Não devia estar aqui...")
         }, fail: { (message) in
             XCTAssertEqual(message, FormMessages.kInvalidInvestedAmount)
@@ -81,8 +77,7 @@ class FormWorkerTests: XCTestCase {
     func testSimulationWithEmptyRate() {
         let expectation = XCTestExpectation(description: "Testando simulação com taxa do CDI vazia")
 
-        let request = Form.Request(investedAmount: "1000.0", rate: "", maturityDate: "15/12/2020")
-        worker?.simulate(with: request, success: { _ in
+        worker?.simulate(with: Seeds.FormWrongRequest.emptyRateRequest, success: { _ in
             assertionFailure("Não devia estar aqui...")
         }, fail: { (message) in
             XCTAssertEqual(message, FormMessages.kInvalidRate)
@@ -95,12 +90,25 @@ class FormWorkerTests: XCTestCase {
     func testSimulationWithCorrectData() {
         let expectation = XCTestExpectation(description: "Testando requisição com dados corretos")
 
-        let request = Form.Request(investedAmount: "1005.0", rate: "100", maturityDate: "15/12/2020")
-        worker?.simulate(with: request, success: { (response) in
-            XCTAssertNotNil(response, "Algo ocorreu e a resposta está vazia!")
-            let responseInvestedAmount = "\(Int(response.investmentParameter.rate))"
-
-            XCTAssertEqual(responseInvestedAmount, request.rate!)
+        worker?.simulate(with: Seeds.FormRequest.request, success: { (response) in
+            XCTAssertEqual(response.investmentParameter.investedAmount, 100.0)
+            XCTAssertEqual(response.investmentParameter.yearlyInterestRate, 7.7734)
+            XCTAssertEqual(response.investmentParameter.maturityTotalDays, 729)
+            XCTAssertEqual(response.investmentParameter.maturityBusinessDays, 515)
+            XCTAssertEqual(response.investmentParameter.maturityDate, "2020-12-15T00:00:00")
+            XCTAssertEqual(response.investmentParameter.rate, 100)
+            XCTAssertEqual(response.investmentParameter.isTaxFree, false)
+            XCTAssertEqual(response.grossAmount, 116.53)
+            XCTAssertEqual(response.taxesAmount, 2.48)
+            XCTAssertEqual(response.netAmount, 114.05)
+            XCTAssertEqual(response.grossAmountProfit, 16.53)
+            XCTAssertEqual(response.netAmountProfit, 14.05)
+            XCTAssertEqual(response.annualGrossRateProfit, 16.53)
+            XCTAssertEqual(response.monthlyGrossRateProfit, 0.63)
+            XCTAssertEqual(response.dailyGrossRateProfit, 0.000297110353903562)
+            XCTAssertEqual(response.taxesRate, 15.0)
+            XCTAssertEqual(response.rateProfit, 7.7734)
+            XCTAssertEqual(response.annualNetRateProfit, 14.05)
             expectation.fulfill()
         }, fail: { _ in
             assertionFailure("Não devia estar aqui...")

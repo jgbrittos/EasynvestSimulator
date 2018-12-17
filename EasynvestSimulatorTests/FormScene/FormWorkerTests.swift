@@ -9,13 +9,14 @@
 import XCTest
 @testable import EasynvestSimulator
 
-class FormWorkerTests: XCTestCase {
+class FormWorkerTests: XCTestCase, ConsoleLogDependency {
     var worker: FormWorker!
+    lazy var consoleLogger: JGLogger = logger
     let timeout = 3.0
 
     override func setUp() {
         worker = FormWorker()
-        worker.networkHandler = NetworkDIIFailureSpy(logger: ConsoleLoggerDII())
+        worker.networkHandler = NetworkDIIFailureSpy(logger: consoleLogger)
         super.setUp()
     }
 

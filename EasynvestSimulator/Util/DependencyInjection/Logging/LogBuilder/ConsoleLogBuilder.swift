@@ -39,16 +39,6 @@ class ConsoleLogBuilder: JGLogBuilderProtocol {
         return self
     }
 
-    func with(prefix: String) -> JGLogBuilderProtocol {
-        self.prefixMarker = prefix
-        return self
-    }
-
-    func with(suffix: String) -> JGLogBuilderProtocol {
-        self.suffixMarker = suffix
-        return self
-    }
-
     func set(header: String?) -> JGLogBuilderProtocol {
         guard hasHeader else { return self }
         if let header = header { self.defaultHeader = header }

@@ -50,10 +50,6 @@ protocol JGLogBuilderProtocol {
     func set(footer: String?) -> JGLogBuilderProtocol
     @discardableResult
     func with(_ options: [JGLOptions]) -> JGLogBuilderProtocol
-    @discardableResult
-    func with(prefix: String) -> JGLogBuilderProtocol
-    @discardableResult
-    func with(suffix: String) -> JGLogBuilderProtocol
 
     func build() -> String
 }

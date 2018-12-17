@@ -24,19 +24,9 @@ protocol JGLogger {
     func shouldPrintConsoleMessages() -> Bool
 }
 
-/// This extension has two purposes:
-/// 1. to provide default values for parameters to whoever uses JGLogger, this way, it is like all methods are
-/// optional since there is no need to implement them in the custom class
-/// 2. to provide a default implementation of shouldPrintConsoleMessages() method using an environment variable
+/// This extension has one purpose:
+/// 1. to provide a default implementation of shouldPrintConsoleMessages() method using an environment variable
 extension JGLogger {
-    func log(_ message: String..., with tag: String? = nil, and options: [JGLOptions] = JGLDefaultOptions) {
-        print("No log method implementation provided")
-    }
-
-    func log(_ error: Error?, with tag: String? = nil, and options: [JGLOptions] = JGLDefaultOptions) {
-        print("No log method implementation provided")
-    }
-
     func shouldPrintConsoleMessages() -> Bool {
         let shouldPrintLog = ProcessInfo.processInfo.environment["shouldPrintLog"]
         return shouldPrintLog != nil && shouldPrintLog == "true"

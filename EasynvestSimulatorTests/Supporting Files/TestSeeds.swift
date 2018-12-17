@@ -89,4 +89,31 @@ struct Seeds {
                                               annualGrossRateProfit: annualGrossRateProfit,
                                               rateProfit: rateProfit)
     }
+
+    struct NetworkRequest {
+        static let params: AnyParameters = ["investedAmount": FormRequest.request.investedAmount!,
+                                            "index": "CDI", //fixed param
+                                            "rate": FormRequest.request.rate!,
+                                            "isTaxFree": false, //fixed param
+                                            "maturityDate": "2020-12-15"]
+
+        static let wrongParams: AnyParameters = ["investedAmount": FormWrongRequest.emptyDateRequest.investedAmount!,
+                                                 "index": "CDI", //fixed param
+                                                 "rate": FormWrongRequest.emptyDateRequest.rate!,
+                                                 "isTaxFree": false, //fixed param
+                                                 "maturityDate": FormWrongRequest.emptyDateRequest.maturityDate!]
+
+        static let internalServerErrorParams: AnyParameters =
+            ["investedAmount": FormWrongRequest.wrongDateRequest.investedAmount!,
+             "index": "CDI", //fixed param
+             "rate": FormWrongRequest.wrongDateRequest.rate!,
+             "isTaxFree": false, //fixed param
+             "maturityDate": FormWrongRequest.wrongDateRequest.maturityDate!]
+        
+        static let wrongKeyParams: AnyParameters = ["investedAmount1": FormRequest.request.investedAmount!,
+                                                    "index": "CDI", //fixed param
+                                                    "rate": FormRequest.request.rate!,
+                                                    "isTaxFree": false, //fixed param
+                                                    "maturityDate": "2020-12-15"]
+    }
 }

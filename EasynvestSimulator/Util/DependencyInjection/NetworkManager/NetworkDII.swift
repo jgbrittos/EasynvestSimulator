@@ -32,12 +32,13 @@ struct NetworkDII: JGNetwork {
         URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
 
             guard error == nil else {
+                let errorMessage = "Error: \(error?.localizedDescription ?? ConsoleMessages.kNilError)"
                 self.logger.log(
                     ConsoleMessages.kGenericMessage,
-                    "Error: \(error?.localizedDescription ?? "---")",
+                    errorMessage,
                     with: ConsoleMessages.kRequestFailureTag,
                     and: JGLDefaultOptions)
-                failure("\(error?.localizedDescription ?? ConsoleMessages.kNilError)")
+                failure(errorMessage)
                 return
             }
 

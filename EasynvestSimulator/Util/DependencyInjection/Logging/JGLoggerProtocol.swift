@@ -12,10 +12,7 @@ protocol JGLogger {
     var options: [JGLOptions] { get set }
     var logBuilder: JGLogBuilderProtocol? { get set }
 
-    func setup()
-//    func log(_: JGNetworkResponse?, with tag: String?, and options: [JGLOptions])
     func log(_: Error?, with tag: String?, and options: [JGLOptions])
-    func log(_: String?, with tag: String?, and options: [JGLOptions])
     func log(_: String..., with tag: String?, and options: [JGLOptions])
 
     /// Override this method with your own logic regarding when console logging should happen
@@ -32,14 +29,6 @@ protocol JGLogger {
 /// optional since there is no need to implement them in the custom class
 /// 2. to provide a default implementation of shouldPrintConsoleMessages() method using an environment variable
 extension JGLogger {
-    func setup() {
-        print("No setup method implementation provided")
-    }
-
-    func log(_ message: String?, with tag: String? = nil, and options: [JGLOptions] = JGLDefaultOptions) {
-        print("No log method implementation provided")
-    }
-
     func log(_ message: String..., with tag: String? = nil, and options: [JGLOptions] = JGLDefaultOptions) {
         print("No log method implementation provided")
     }

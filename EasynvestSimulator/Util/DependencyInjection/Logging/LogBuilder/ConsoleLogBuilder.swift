@@ -84,18 +84,6 @@ class ConsoleLogBuilder: JGLogBuilderProtocol {
         return self.log
     }
 
-    /// Alternative function to include logs at once, instead one by one
-    ///
-    /// - Parameter logs: all logs
-    /// - Returns: LogBuilderProtocol representing builder object filled with logs
-    func set(logs: String...) -> JGLogBuilderProtocol {
-        for log in logs {
-            self.log.append(log)
-            self.log.append(JGLDefaultConstants.BreakLine)
-        }
-        return self
-    }
-
     func set(logs: [String]) -> JGLogBuilderProtocol {
         for log in logs {
             self.log.append(log)

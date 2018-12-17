@@ -33,33 +33,35 @@ struct NetworkDII: JGNetwork {
 
             guard error == nil else {
                 self.logger.log(
-                    "Algo ocorreu durante a requisição",
+                    ConsoleMessages.kGenericMessage,
                     "Error: \(error?.localizedDescription ?? "---")",
-                    with: "[Easynvest/Request_Failure]",
+                    with: ConsoleMessages.kRequestFailureTag,
                     and: JGLDefaultOptions)
-                failure("\(error?.localizedDescription ?? "Algo inesperado ocorreu...")")
+                failure("\(error?.localizedDescription ?? ConsoleMessages.kNilError)")
                 return
             }
 
             if let response = response as? HTTPURLResponse, response.statusCode != 200 {
                 self.logger.log(
-                    "Algo ocorreu durante a requisição.",
+                    ConsoleMessages.kGenericMessage,
                     "Status Code: \(response.statusCode)",
-                    with: "[Easynvest/Request_Failure]",
+                    with: ConsoleMessages.kRequestFailureTag,
                     and: JGLDefaultOptions)
-                failure("Algo ocorreu durante a requisição.")
+                failure(ConsoleMessages.kGenericMessage)
                 return
             }
 
             if let data = data {
-                self.logger.log("Sucesso!", with: "[Easynvest/Request_Successful]", and: JGLDefaultOptions)
+                self.logger.log(GenericMessages.kSuccess,
+                                with: ConsoleMessages.kRequestSuccessfulTag,
+                                and: JGLDefaultOptions)
                 success(data)
             } else {
                 self.logger.log(
-                    "Algo ocorreu durante a requisição!",
-                    with: "[Easynvest/Request_Failure]",
+                    ConsoleMessages.kGenericMessage,
+                    with: ConsoleMessages.kRequestFailureTag,
                     and: JGLDefaultOptions)
-                failure("Algo ocorreu durante a requisição!")
+                failure(ConsoleMessages.kGenericMessage)
             }
         }.resume()
     }

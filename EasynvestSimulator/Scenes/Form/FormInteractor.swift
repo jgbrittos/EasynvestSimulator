@@ -14,12 +14,10 @@ protocol FormBusinessLogic {
 
 class FormInteractor: FormBusinessLogic {
     var presenter: FormPresentationLogic?
-    var worker: FormWorker?
+    var worker = FormWorker()
 
     func simulateInvestment(with request: Form.Request) {
-        worker = FormWorker()
-
-        worker?.simulate(with: request, success: { (response) in
+        worker.simulate(with: request, success: { (response) in
             self.presenter?.presentSimulation(response: response)
         }, fail: { (message) in
             self.presenter?.presentErrorAlert(message: message)

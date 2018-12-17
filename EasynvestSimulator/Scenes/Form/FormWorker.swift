@@ -16,20 +16,15 @@ class FormWorker: NetworkDependency, ConsoleLogDependency {
                   success: @escaping (Form.Response) -> Void,
                   fail: @escaping (String) -> Void) {
         let maturityDate = checkAndFormatMaturityDate(date: request.maturityDate)
-        let investedAmount = checkAndConvertInvestedAmount(investedAmount: request.investedAmount)
-        let rate = checkAndConvertRate(rate: request.rate)
+        guard !maturityDate.isEmpty else { return fail(FormMessages.kInvalidMaturityDate) }
 
-        guard !maturityDate.isEmpty else {
-            return fail("Algum problema ocorreu com a data. Tente novamente!")
+        let investment = checkAndConvertInvestedAmount(investedAmount: request.investedAmount)
+        guard let investedAmount = investment, !investedAmount.isZero else {
+            return fail(FormMessages.kInvalidInvestedAmount)
         }
 
-        guard !investedAmount.isZero else {
-            return fail("Algum problema ocorreu com a total a ser investido. Tente novamente!")
-        }
-
-        guard rate != 0 else {
-            return fail("Algum problema ocorreu com o percentual do papel. Tente novamente!")
-        }
+        let tax = checkAndConvertRate(rate: request.rate)
+        guard let rate = tax, rate != 0 else { return fail(FormMessages.kInvalidRate) }
 
         let params: AnyParameters = ["investedAmount": investedAmount,
                                      "index": "CDI", //fixed param
@@ -37,13 +32,12 @@ class FormWorker: NetworkDependency, ConsoleLogDependency {
                                      "isTaxFree": false, //fixed param
                                      "maturityDate": maturityDate]
 
-        let url = "https://api-simulator-calc.easynvest.com.br/calculator/simulate"
-        networkHandler.getRequest(for: url, with: params, success: { (result) in
+        networkHandler.getRequest(for: API.url, with: params, success: { (result) in
             do {
                 let formResponse = try JSONDecoder().decode(Form.Response.self, from: result)
                 success(formResponse)
             } catch let error {
-                self.consoleLogger.log(error, with: "[Easynvest/Decode_Error]", and: JGLDefaultOptions)
+                self.consoleLogger.log(error, with: ConsoleMessages.kDecodeErrorTag, and: JGLDefaultOptions)
             }
         }, failure: { (message) in
             fail(message)
@@ -55,22 +49,22 @@ class FormWorker: NetworkDependency, ConsoleLogDependency {
             return ""
         }
 
-        return FormatterHelper.convert(date: date, from: "dd/MM/yyyy", to: "yyyy-MM-dd")
+        return FormatterHelper.convert(date: date, from: DateFormats.kHumanReadable, to: DateFormats.kAPIRequest)
     }
 
-    private func checkAndConvertInvestedAmount(investedAmount: String?) -> Double {
+    private func checkAndConvertInvestedAmount(investedAmount: String?) -> Double? {
         guard let investedAmount = investedAmount, !investedAmount.isEmpty else {
             return 0.0
         }
 
-        return Double(investedAmount.sanitizeCurrency) ?? 0.0
+        return Double(investedAmount.sanitizeCurrency)
     }
 
-    private func checkAndConvertRate(rate: String?) -> Int {
+    private func checkAndConvertRate(rate: String?) -> Int? {
         guard let rate = rate, !rate.isEmpty else {
             return 0
         }
 
-        return Int(rate.sanitizePercentual) ?? 0
+        return Int(rate.sanitizePercentual)
     }
 }

@@ -26,7 +26,25 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C382F75B21C4379500886836"
+            BuildableName = "EasynvestSimulatorTests.xctest"
+            BlueprintName = "EasynvestSimulatorTests"
+            ReferencedContainer = "container:EasynvestSimulator.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C382F74721C4379300886836"
+            BuildableName = "EasynvestSimulator.app"
+            BlueprintName = "EasynvestSimulator"
+            ReferencedContainer = "container:EasynvestSimulator.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">

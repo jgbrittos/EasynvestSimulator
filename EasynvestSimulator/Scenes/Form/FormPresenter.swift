@@ -26,8 +26,8 @@ class FormPresenter: FormPresentationLogic {
         let taxesAmountAndRate = taxesAmount + "(\(taxesRate))"
         let netAmount = FormatterHelper.formatIn(currency: response.netAmount)
         let maturityDate = FormatterHelper.convert(date: response.investmentParameter.maturityDate,
-                                                   from: "yyyy-MM-dd'T'HH:mm:ss",
-                                                   to: "dd/MM/yyyy")
+                                                   from: DateFormats.kAPIResponse,
+                                                   to: DateFormats.kHumanReadable)
         let maturityTotalDays = response.investmentParameter.maturityTotalDays
         let monthlyGrossRateProfit = FormatterHelper.formatIn(percent: response.monthlyGrossRateProfit)
         let rate = FormatterHelper.formatIn(percent: response.investmentParameter.rate)

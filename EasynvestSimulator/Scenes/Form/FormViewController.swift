@@ -115,9 +115,13 @@ extension FormViewController {
         DispatchQueue.main.async {
             self.stopLoading()
             self.simulateButton.isEnabled = true
-            let alertController = UIAlertController(title: "Ops...", message: message, preferredStyle: .alert)
+            let alertController = UIAlertController(title: GenericMessages.kAlertTitle,
+                                                    message: message,
+                                                    preferredStyle: .alert)
 
-            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            let okAction = UIAlertAction(title: GenericMessages.kAlertDoneActionText,
+                                         style: .default,
+                                         handler: nil)
             alertController.addAction(okAction)
             self.present(alertController, animated: true)
         }
@@ -136,11 +140,11 @@ extension FormViewController {
         let keyboardToolbar = UIToolbar()
         keyboardToolbar.sizeToFit()
         let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let doneBarButton = UIBarButtonItem(title: "Próximo",
+        let doneBarButton = UIBarButtonItem(title: GenericMessages.kToolbarNext,
                                             style: .done,
                                             target: self,
                                             action: #selector(self.doneButtonAction(_:)))
-        let cancelBarButton = UIBarButtonItem(title: "Cancelar",
+        let cancelBarButton = UIBarButtonItem(title: GenericMessages.kToolbarCancel,
                                               style: .done,
                                               target: self,
                                               action: #selector(self.cancelButtonAction(_:)))

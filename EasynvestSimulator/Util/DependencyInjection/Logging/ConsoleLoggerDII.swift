@@ -12,11 +12,6 @@ class ConsoleLoggerDII: JGLogger {
     lazy var options = [JGLOptions]()
     var logBuilder: JGLogBuilderProtocol?
 
-    func log(_ message: String?, with tag: String? = nil, and options: [JGLOptions] = JGLDefaultOptions) {
-        self.options = options
-        buildLog(with: tag, and: message)
-    }
-
     func log(_ messages: String..., with tag: String? = nil, and options: [JGLOptions] = JGLDefaultOptions) {
         self.options = options
         buildLog(with: tag, and: messages)

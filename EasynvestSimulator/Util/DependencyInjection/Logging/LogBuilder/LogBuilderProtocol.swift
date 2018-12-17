@@ -45,8 +45,6 @@ protocol JGLogBuilderProtocol {
     @discardableResult
     func set(_: String) -> JGLogBuilderProtocol
     @discardableResult
-    func set(logs: String...) -> JGLogBuilderProtocol
-    @discardableResult
     func set(logs: [String]) -> JGLogBuilderProtocol
     @discardableResult
     func set(footer: String?) -> JGLogBuilderProtocol
@@ -70,51 +68,6 @@ extension String {
     mutating func append(suffix: String, if hasSuffix: Bool) {
         if hasSuffix {
             self.append(suffix)
-        }
-    }
-}
-
-extension Dictionary {
-    var toJson: String {
-        do {
-            let json = try JSONSerialization.data(withJSONObject: self, options: .prettyPrinted)
-
-            if let jsonString = String(data: json, encoding: .utf8) {
-                return jsonString
-            } else {
-                return "Error printing data as JSON"
-            }
-        } catch {
-            return "Error printing data as JSON"
-        }
-    }
-
-    func merge(with dictionary: [Key: Value]) -> [Key: Value] {
-        var mergedDict: [Key: Value] = [:]
-
-        [self, dictionary].forEach { dict in
-            for (key, value) in dict {
-                mergedDict[key] = value
-            }
-        }
-
-        return mergedDict
-    }
-}
-
-extension Data {
-    var toJson: String {
-        do {
-            let jsonObject = try JSONSerialization.jsonObject(with: self, options: [])
-            let jsonResponse = try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted)
-
-            if let jsonString = String(data: jsonResponse, encoding: .utf8) {
-                return jsonString
-            } else {
-                return "Error printing data as JSON"
-            }
-        } catch {
-            return "Error printing data as JSON"
         }
     }
 }

@@ -19,7 +19,7 @@ extension UIViewController {
     }
 
     @objc
-    func dismissKeyboard() {
+    open func dismissKeyboard() {
         view.endEditing(true)
     }
 
@@ -44,7 +44,7 @@ extension UIViewController {
     }
 
     @objc
-    func keyboardWillShow(notification: NSNotification) {
+    open func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey]
             as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
@@ -54,7 +54,7 @@ extension UIViewController {
     }
 
     @objc
-    func keyboardWillHide(notification: NSNotification) {
+    open func keyboardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
         }

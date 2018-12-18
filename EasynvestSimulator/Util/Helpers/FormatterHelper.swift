@@ -25,7 +25,7 @@ class FormatterHelper {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.locale = Locale(identifier: "pt_BR")
-        return formatter.string(for: value) ?? ""
+        return formatter.string(for: value)!
     }
 
     static func formatIn(percent value: Double) -> String {
@@ -35,8 +35,8 @@ class FormatterHelper {
     static func paint(value: String) -> NSAttributedString {
         let fixedText = "Rendimento total de "
 
-        let gray = UIColor(named: "Gray") ?? .gray
-        let green = UIColor(named: "Green") ?? .green
+        let gray = UIColor(named: "Gray")!
+        let green = UIColor(named: "Green")!
 
         let grayText: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: gray]
         let greenText: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: green]

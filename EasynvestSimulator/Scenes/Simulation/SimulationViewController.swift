@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//TODO: MOSTRAR OS NUMEROS PERCENTUAIS COM VIRGULA COMO SEPARADOR E NÃO PONTO
 class SimulationViewController: UIViewController {
     //Title
     @IBOutlet weak var titleGrossAmountLabel: UILabel!
@@ -39,39 +39,43 @@ class SimulationViewController: UIViewController {
 
     func displaySimulationDetail() {
         if self.simulation != nil {
-            self.setupTitle()
-            self.setupFirstBlock()
-            self.setupSecondBlock()
+            self.setupData()
         } else {
             self.showBlankView()
         }
     }
 
-    func setupTitle() {
-        self.titleGrossAmountLabel.text = self.simulation?.grossAmount ?? "---"
+    func setupData() {
+        self.titleGrossAmountLabel.text = self.simulation!.grossAmount
         self.titleGrossAmountProfitLabel.attributedText =
-            FormatterHelper.paint(value: self.simulation?.grossAmountProfit ?? "---")
-    }
-
-    func setupFirstBlock() {
-        self.investedAmountLabel.text = self.simulation?.investedAmount ?? "---"
-        self.grossAmountLabel.text = self.simulation?.grossAmount ?? "---"
-        self.grossAmountProfitLabel.text = self.simulation?.grossAmountProfit ?? "---"
-        self.taxesAmountAndRateLabel.text = self.simulation?.taxesAmountAndRate ?? "---"
-        self.netAmountLabel.text = self.simulation?.netAmount ?? "---"
-    }
-
-    func setupSecondBlock() {
-        self.maturityDateLabel.text = self.simulation?.maturityDate ?? "---"
-        self.maturityTotalDaysLabel.text = String(describing: self.simulation?.maturityTotalDays ?? 0)
-        self.monthlyGrossRateProfitLabel.text = self.simulation?.monthlyGrossRateProfit ?? "---"
-        self.rateLabel.text = self.simulation?.rate ?? "---"
-        self.annualGrossRateProfitLabel.text = self.simulation?.annualGrossRateProfit ?? "---"
-        self.rateProfitLabel.text = self.simulation?.rateProfit ?? "---"
+            FormatterHelper.paint(value: self.simulation!.grossAmountProfit)
+        self.investedAmountLabel.text = self.simulation!.investedAmount
+        self.grossAmountLabel.text = self.simulation!.grossAmount
+        self.grossAmountProfitLabel.text = self.simulation!.grossAmountProfit
+        self.taxesAmountAndRateLabel.text = self.simulation!.taxesAmountAndRate
+        self.netAmountLabel.text = self.simulation!.netAmount
+        self.maturityDateLabel.text = self.simulation!.maturityDate
+        self.maturityTotalDaysLabel.text = String(describing: simulation!.maturityTotalDays)
+        self.monthlyGrossRateProfitLabel.text = self.simulation!.monthlyGrossRateProfit
+        self.rateLabel.text = self.simulation!.rate
+        self.annualGrossRateProfitLabel.text = self.simulation!.annualGrossRateProfit
+        self.rateProfitLabel.text = self.simulation!.rateProfit
     }
 
     func showBlankView() {
-        // TODO: MOSTRAR DADOS EM BRANCO CASO ALGO DE ERRADO
+        self.titleGrossAmountLabel.text = "R$ 0,00"
+        self.titleGrossAmountProfitLabel.text = "Rendimento de R$ 0,00"
+        self.investedAmountLabel.text = "R$ 0,00"
+        self.grossAmountLabel.text = "R$ 0,00"
+        self.grossAmountProfitLabel.text = "R$ 0,00"
+        self.taxesAmountAndRateLabel.text = "R$ 0,00(0%)"
+        self.netAmountLabel.text = "R$ 0,00"
+        self.maturityDateLabel.text = "dia/mês/ano"
+        self.maturityTotalDaysLabel.text = "0"
+        self.monthlyGrossRateProfitLabel.text = "0%"
+        self.rateLabel.text = "0%"
+        self.annualGrossRateProfitLabel.text = "0%"
+        self.rateProfitLabel.text = "0%"
     }
 
     @IBAction func simulateAgain(_ sender: Any) {

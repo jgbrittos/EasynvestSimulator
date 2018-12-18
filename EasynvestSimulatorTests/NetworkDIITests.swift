@@ -8,7 +8,7 @@
 
 import XCTest
 @testable import EasynvestSimulator
-
+//TODO: TENTAR FAZER UMA REQUISIÇÃO QUE RETORNE DATA NIL
 class NetworkDIITests: XCTestCase, NetworkDependency {
     lazy var networkHandler: JGNetwork = network
     let timeout = 10.0

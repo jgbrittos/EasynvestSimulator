@@ -32,9 +32,22 @@ class SimulationViewCotrollerTests: XCTestCase {
         RunLoop.current.run(until: Date())
     }
 
-    func testExample() {
+    func testLoadingViewWithSimulationData() {
+        viewController.simulation = Seeds.FormViewModel.viewModel
         loadView()
 
         XCTAssertNotEqual(viewController.titleGrossAmountLabel.text, "---")
+    }
+
+    func testLoadingViewWithoutSimulationData() {
+        viewController.simulation = nil
+
+        loadView()
+
+        XCTAssertEqual(viewController.titleGrossAmountLabel.text, "R$ 0,00")
+    }
+    
+    func testSimulateAgainButton() {
+        //TODO: TENTAR FAZER ESSE TESTE
     }
 }

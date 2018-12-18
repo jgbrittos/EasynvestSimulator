@@ -17,7 +17,7 @@ class Mask: NSObject {
             return false
         }
 
-        var currentString = textField.text ?? ""
+        var currentString = textField.text!
 
         //Clear text
         if string.isEmpty {

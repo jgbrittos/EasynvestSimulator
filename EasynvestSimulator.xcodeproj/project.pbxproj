@@ -32,12 +32,15 @@
 		C340E14621C6E04A00E6D9DC /* FormWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340E14521C6E04A00E6D9DC /* FormWorkerTests.swift */; };
 		C340E14821C6EDF100E6D9DC /* FormatterHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340E14721C6EDF100E6D9DC /* FormatterHelperTests.swift */; };
 		C340E14A21C6F9B600E6D9DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340E14921C6F9B600E6D9DC /* Constants.swift */; };
+		C34D259C21C7FFA80046AF9E /* FormViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34D259B21C7FFA80046AF9E /* FormViewControllerTests.swift */; };
 		C382F74C21C4379300886836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382F74B21C4379300886836 /* AppDelegate.swift */; };
 		C382F75121C4379300886836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382F74F21C4379300886836 /* Main.storyboard */; };
 		C382F75321C4379500886836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C382F75221C4379500886836 /* Assets.xcassets */; };
 		C382F75621C4379500886836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382F75421C4379500886836 /* LaunchScreen.storyboard */; };
 		C397792D21C5A82200CA2D45 /* MaskHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397792C21C5A82200CA2D45 /* MaskHelper.swift */; };
 		C397792F21C5AACD00CA2D45 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397792E21C5AACD00CA2D45 /* String+Extension.swift */; };
+		C3A58F1121C92DE500A32E1B /* UIViewControllerExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A58F1021C92DE500A32E1B /* UIViewControllerExtensionTests.swift */; };
+		C3A58F1321C938DC00A32E1B /* ConsoleLoggerDIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A58F1221C938DC00A32E1B /* ConsoleLoggerDIITests.swift */; };
 		C3F2E38121C7E09A00273C8E /* SimulationViewCotrollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E38021C7E09A00273C8E /* SimulationViewCotrollerTests.swift */; };
 		C3F2E38321C7ECE600273C8E /* NetworkDIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E38221C7ECE600273C8E /* NetworkDIITests.swift */; };
 		FF8D3928B7DE06F1164E0F5B /* Pods_EasynvestSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5012EFFBD9C677420471625E /* Pods_EasynvestSimulator.framework */; };
@@ -82,6 +85,7 @@
 		C340E14521C6E04A00E6D9DC /* FormWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormWorkerTests.swift; sourceTree = "<group>"; };
 		C340E14721C6EDF100E6D9DC /* FormatterHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterHelperTests.swift; sourceTree = "<group>"; };
 		C340E14921C6F9B600E6D9DC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C34D259B21C7FFA80046AF9E /* FormViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewControllerTests.swift; sourceTree = "<group>"; };
 		C382F74821C4379300886836 /* EasynvestSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasynvestSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C382F74B21C4379300886836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C382F75021C4379300886836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		C382F76221C4379500886836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C397792C21C5A82200CA2D45 /* MaskHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskHelper.swift; sourceTree = "<group>"; };
 		C397792E21C5AACD00CA2D45 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C3A58F1021C92DE500A32E1B /* UIViewControllerExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionTests.swift; sourceTree = "<group>"; };
+		C3A58F1221C938DC00A32E1B /* ConsoleLoggerDIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLoggerDIITests.swift; sourceTree = "<group>"; };
 		C3F2E38021C7E09A00273C8E /* SimulationViewCotrollerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewCotrollerTests.swift; sourceTree = "<group>"; };
 		C3F2E38221C7ECE600273C8E /* NetworkDIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDIITests.swift; sourceTree = "<group>"; };
 		E3471DC99ACC73848DBE0B13 /* Pods_EasynvestSimulatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasynvestSimulatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,12 +266,14 @@
 			isa = PBXGroup;
 			children = (
 				C3F2E38421C7F9B700273C8E /* FormScene */,
+				C3F2E38021C7E09A00273C8E /* SimulationViewCotrollerTests.swift */,
 				C3F2E38521C7F9C600273C8E /* Helpers */,
 				C337421D21C711D700735EAF /* StringExtensionTests.swift */,
-				C3F2E38021C7E09A00273C8E /* SimulationViewCotrollerTests.swift */,
 				C3F2E38221C7ECE600273C8E /* NetworkDIITests.swift */,
+				C3A58F1221C938DC00A32E1B /* ConsoleLoggerDIITests.swift */,
 				C3F2E38621C7F9E000273C8E /* Supporting Files */,
 				C382F76221C4379500886836 /* Info.plist */,
+				C3A58F1021C92DE500A32E1B /* UIViewControllerExtensionTests.swift */,
 			);
 			path = EasynvestSimulatorTests;
 			sourceTree = "<group>";
@@ -291,6 +299,7 @@
 		C3F2E38421C7F9B700273C8E /* FormScene */ = {
 			isa = PBXGroup;
 			children = (
+				C34D259B21C7FFA80046AF9E /* FormViewControllerTests.swift */,
 				C337421F21C7174800735EAF /* FormInteractorTests.swift */,
 				C337422321C7C3F200735EAF /* FormPresenterTests.swift */,
 				C340E14521C6E04A00E6D9DC /* FormWorkerTests.swift */,
@@ -491,12 +500,15 @@
 			files = (
 				C3F2E38321C7ECE600273C8E /* NetworkDIITests.swift in Sources */,
 				C337422421C7C3F200735EAF /* FormPresenterTests.swift in Sources */,
+				C3A58F1121C92DE500A32E1B /* UIViewControllerExtensionTests.swift in Sources */,
+				C34D259C21C7FFA80046AF9E /* FormViewControllerTests.swift in Sources */,
 				C337421E21C711D700735EAF /* StringExtensionTests.swift in Sources */,
 				C337422621C7C67F00735EAF /* TestSeeds.swift in Sources */,
 				C340E14821C6EDF100E6D9DC /* FormatterHelperTests.swift in Sources */,
 				C337421C21C70FF400735EAF /* MaskHelperTests.swift in Sources */,
 				C337422021C7174800735EAF /* FormInteractorTests.swift in Sources */,
 				C3F2E38121C7E09A00273C8E /* SimulationViewCotrollerTests.swift in Sources */,
+				C3A58F1321C938DC00A32E1B /* ConsoleLoggerDIITests.swift in Sources */,
 				C340E14621C6E04A00E6D9DC /* FormWorkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

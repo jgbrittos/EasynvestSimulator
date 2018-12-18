@@ -12,7 +12,6 @@ import XCTest
 class StringExtensionTests: XCTestCase {
     func testStringCurrencyFormatting() {
         let currencyString = "1".currencyInputFormatting()
-        XCTAssertEqual(currencyString.first, "R$ 0,01".first)
-//        XCTAssertEqual(currencyString, "R$ 0,01")
+        XCTAssertEqual(currencyString.first.count, "R$ 0,01".count)
     }
 }

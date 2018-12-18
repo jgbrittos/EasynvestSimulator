@@ -132,4 +132,10 @@ class FormViewControllerTests: XCTestCase {
 
         XCTAssertTrue(result)
     }
+
+    func testDisplaySimulation() {
+        loadView()
+        viewController.displaySimulation(viewModel: Seeds.FormViewModel.viewModel)
+        XCTAssert(viewController.simulateButton.isEnabled)
+    }
 }

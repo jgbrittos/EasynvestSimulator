@@ -28,6 +28,8 @@ class FormRouter: NSObject, FormRoutingLogic {
     }
 
     func navigateToSimulationDetail(source: FormViewController, destination: SimulationViewController) {
-        source.show(destination, sender: nil)
+        DispatchQueue.main.async {
+            source.show(destination, sender: nil)
+        }
     }
 }

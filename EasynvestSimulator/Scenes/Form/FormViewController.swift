@@ -62,8 +62,10 @@ class FormViewController: UIViewController, FormDisplayLogic {
 
     // MARK: View Actions
     @IBAction func simulate(_ sender: Any) {
-        self.startLoading()
-        self.simulateButton.isEnabled = false
+        DispatchQueue.main.async {
+            self.loading.startAnimating()
+            self.simulateButton.isEnabled = false
+        }
 
         let investedAmount = investedAmountTextField.text
         let maturityDate = maturityDateTextField.text
@@ -82,16 +84,8 @@ class FormViewController: UIViewController, FormDisplayLogic {
         self.rateTextField.text = ""
     }
 
-    private func startLoading() {
-        DispatchQueue.main.async {
-            self.loading.startAnimating()
-        }
-    }
-
     private func stopLoading() {
-        DispatchQueue.main.async {
-            self.loading.stopAnimating()
-        }
+        self.loading.stopAnimating()
     }
 }
 
@@ -99,8 +93,10 @@ class FormViewController: UIViewController, FormDisplayLogic {
 extension FormViewController {
     func displaySimulation(viewModel: Form.ViewModel) {
         self.router?.routeToSimulationResult(viewModel: viewModel)
-        self.stopLoading()
-        self.simulateButton.isEnabled = true
+        DispatchQueue.main.async {
+            self.stopLoading()
+            self.simulateButton.isEnabled = true
+        }
     }
 
     func displayErrorAlert(with message: String) {

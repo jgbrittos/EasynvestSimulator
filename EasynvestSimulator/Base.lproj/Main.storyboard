@@ -447,7 +447,6 @@
                                     <constraint firstItem="7fJ-eY-ebh" firstAttribute="width" secondItem="Jgg-5R-Tgk" secondAttribute="width" multiplier="0.9" id="LeK-14-EMx"/>
                                     <constraint firstAttribute="bottom" secondItem="RRt-re-iaT" secondAttribute="bottom" constant="20" id="OQM-Kl-1Yz"/>
                                     <constraint firstItem="RRt-re-iaT" firstAttribute="centerX" secondItem="Jgg-5R-Tgk" secondAttribute="centerX" id="bDH-HI-Kbn"/>
-                                    <constraint firstItem="7fJ-eY-ebh" firstAttribute="centerX" secondItem="Jgg-5R-Tgk" secondAttribute="centerX" id="dTs-Zh-gpo"/>
                                     <constraint firstItem="RRt-re-iaT" firstAttribute="width" secondItem="Jgg-5R-Tgk" secondAttribute="width" multiplier="0.9" id="hBT-mF-diF"/>
                                     <constraint firstItem="npa-IG-fRY" firstAttribute="width" secondItem="Jgg-5R-Tgk" secondAttribute="width" multiplier="0.9" id="huk-FS-gsP"/>
                                     <constraint firstItem="npa-IG-fRY" firstAttribute="top" secondItem="7fJ-eY-ebh" secondAttribute="bottom" constant="30" id="nL7-C4-JaP"/>
@@ -476,7 +475,6 @@
                         <outlet property="netAmountLabel" destination="4ua-G9-qwX" id="rij-3V-cp4"/>
                         <outlet property="rateLabel" destination="LxR-qT-VVh" id="GN4-pe-gyr"/>
                         <outlet property="rateProfitLabel" destination="FGh-Jn-0Il" id="Gst-HX-bEl"/>
-                        <outlet property="simulateAgainButton" destination="RRt-re-iaT" id="Zvy-9M-hIi"/>
                         <outlet property="taxesAmountAndRateLabel" destination="WTJ-UH-8gk" id="9og-s9-73y"/>
                         <outlet property="titleGrossAmountLabel" destination="MDe-I9-KHe" id="uEd-zH-X9S"/>
                         <outlet property="titleGrossAmountProfitLabel" destination="p9D-pi-QIY" id="t6A-L1-8on"/>

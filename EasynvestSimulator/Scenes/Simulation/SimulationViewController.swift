@@ -30,8 +30,12 @@ class SimulationViewController: UIViewController {
 
     @IBOutlet var stackViewsCollection: [UIStackView]!
 
-    @IBOutlet weak var simulateAgainButton: UIButton!
     var simulation: Form.ViewModel?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        UIView.setAnimationsEnabled(false)
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -52,6 +56,7 @@ class SimulationViewController: UIViewController {
     @objc
     func prepareView() {
         DispatchQueue.main.async {
+            self.displaySimulationDetail()
             if UIApplication.shared.preferredContentSizeCategory > .extraExtraLarge {
                 for stack in self.stackViewsCollection {
                     stack.axis = .vertical
@@ -63,7 +68,6 @@ class SimulationViewController: UIViewController {
                 }
                 self.adjustLabelsText()
             }
-            self.displaySimulationDetail()
         }
     }
 

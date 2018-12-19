@@ -7,7 +7,7 @@
 //
 
 import UIKit
-// TODO: VALIDAR PARA O DATE PICKER NAO PODER COLOCAR DATA MENOR QUE O DIA DE HOJE
+
 protocol FormDisplayLogic: class {
     func displaySimulation(viewModel: Form.ViewModel)
     func displayErrorAlert(with message: String)

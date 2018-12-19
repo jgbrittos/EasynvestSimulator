@@ -8,15 +8,10 @@
 
 import XCTest
 @testable import EasynvestSimulator
-//TODO: TENTAR FAZER UMA REQUISIÇÃO QUE RETORNE DATA NIL
+
 class NetworkDIITests: XCTestCase, NetworkDependency {
     lazy var networkHandler: JGNetwork = network
     let timeout = 10.0
-
-    override func setUp() {
-        super.setUp()
-//        networkHandler = CoreDependency().network
-    }
 
     func testCorrectRequest() {
         let expectation = XCTestExpectation(description: "Testando requisição com dados corretos")

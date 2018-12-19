@@ -32,7 +32,7 @@ struct NetworkDII: JGNetwork {
         URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
 
             guard error == nil else {
-                let errorMessage = "Error: \(String(describing: error?.localizedDescription))"
+                let errorMessage = "Error: \(error!.localizedDescription)"
                 self.logger.log(
                     ConsoleMessages.kGenericMessage,
                     errorMessage,

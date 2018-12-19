@@ -29,7 +29,11 @@ class FormatterHelper {
     }
 
     static func formatIn(percent value: Double) -> String {
-        return String(format: "%.02f", value) + "%"
+        let formatter = NumberFormatter()
+        formatter.minimumIntegerDigits = 1
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 2
+        return formatter.string(from: value as NSNumber)!.replace(symbols: ["."], with: ",") + "%"
     }
 
     static func paint(value: String) -> NSAttributedString {

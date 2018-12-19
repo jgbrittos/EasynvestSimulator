@@ -15,7 +15,7 @@ class FormatterHelperTests: XCTestCase {
     }
 
     func testFormatInPercentValue() {
-        XCTAssertEqual(FormatterHelper.formatIn(percent: 100.0), "100.00%")
+        XCTAssertEqual(FormatterHelper.formatIn(percent: 100.0), "100%")
     }
 
     func testPaintValueInGreen() {

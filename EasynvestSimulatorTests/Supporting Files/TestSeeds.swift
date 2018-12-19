@@ -109,7 +109,7 @@ struct Seeds {
              "rate": FormWrongRequest.wrongDateRequest.rate!,
              "isTaxFree": false, //fixed param
              "maturityDate": FormWrongRequest.wrongDateRequest.maturityDate!]
-        
+
         static let wrongKeyParams: AnyParameters = ["investedAmount1": FormRequest.request.investedAmount!,
                                                     "index": "CDI", //fixed param
                                                     "rate": FormRequest.request.rate!,

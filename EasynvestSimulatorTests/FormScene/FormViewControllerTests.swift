@@ -103,8 +103,8 @@ class FormViewControllerTests: XCTestCase {
 
         viewController.myTextFieldDidChange(viewController.investedAmountTextField)
 
-        XCTAssertEqual(viewController.investedAmountTextField.text!.count,
-                       "R$ 1.000,00".count,
+        XCTAssertEqual(viewController.investedAmountTextField.text!.sanitizeCurrency,
+                       "R$ 1.000,00".sanitizeCurrency,
                        "Texto após formatação pela máscara: \(viewController.investedAmountTextField.text ?? "ERRO")")
     }
 

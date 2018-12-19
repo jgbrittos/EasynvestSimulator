@@ -461,7 +461,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="simulateAgain:" destination="bVW-VZ-eBs" eventType="touchUpInside" id="OGv-Hm-Kgw"/>
+                                    <segue destination="AOi-FB-pJ9" kind="unwind" unwindAction="unwindToFormVCWithSegue:" id="WPn-q4-P7Y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -496,7 +496,6 @@
                         <outlet property="taxesAmountAndRateLabel" destination="WTJ-UH-8gk" id="9og-s9-73y"/>
                         <outlet property="titleGrossAmountLabel" destination="MDe-I9-KHe" id="uEd-zH-X9S"/>
                         <outlet property="titleGrossAmountProfitLabel" destination="p9D-pi-QIY" id="t6A-L1-8on"/>
-                        <segue destination="AOi-FB-pJ9" kind="unwind" identifier="unwindToFormVC" unwindAction="unwindToFormVCWithSegue:" id="o0c-Dk-Klr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbe-fw-aHX" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//TODO: MOSTRAR OS NUMEROS PERCENTUAIS COM VIRGULA COMO SEPARADOR E NÃO PONTO
+
 class SimulationViewController: UIViewController {
     //Title
     @IBOutlet weak var titleGrossAmountLabel: UILabel!
@@ -76,9 +76,5 @@ class SimulationViewController: UIViewController {
         self.rateLabel.text = "0%"
         self.annualGrossRateProfitLabel.text = "0%"
         self.rateProfitLabel.text = "0%"
-    }
-
-    @IBAction func simulateAgain(_ sender: Any) {
-        performSegue(withIdentifier: "unwindToFormVC", sender: self)
     }
 }

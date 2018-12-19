@@ -26,14 +26,14 @@ class FormPresenterTests: XCTestCase {
         XCTAssertEqual(viewController.viewModel.investedAmount.sanitizeCurrency, "100.00")
         XCTAssertEqual(viewController.viewModel.grossAmount.sanitizeCurrency, "116.53")
         XCTAssertEqual(viewController.viewModel.grossAmountProfit.sanitizeCurrency, "16.53")
-        XCTAssertEqual(viewController.viewModel.taxesAmountAndRate.sanitizeCurrency, "2.48(1500%)")
+        XCTAssertEqual(viewController.viewModel.taxesAmountAndRate.sanitizeCurrency, "2.48(15%)")
         XCTAssertEqual(viewController.viewModel.netAmount.sanitizeCurrency, "114.05")
         XCTAssertEqual(viewController.viewModel.maturityDate, "15/12/2020")
         XCTAssertEqual(viewController.viewModel.maturityTotalDays, 729)
-        XCTAssertEqual(viewController.viewModel.monthlyGrossRateProfit, "0.63%")
-        XCTAssertEqual(viewController.viewModel.rate, "100.00%")
-        XCTAssertEqual(viewController.viewModel.annualGrossRateProfit, "16.53%")
-        XCTAssertEqual(viewController.viewModel.rateProfit, "7.77%")
+        XCTAssertEqual(viewController.viewModel.monthlyGrossRateProfit, "0,63%")
+        XCTAssertEqual(viewController.viewModel.rate, "100%")
+        XCTAssertEqual(viewController.viewModel.annualGrossRateProfit, "16,53%")
+        XCTAssertEqual(viewController.viewModel.rateProfit, "7,77%")
     }
 
     func testDisplayErrorAlert() {

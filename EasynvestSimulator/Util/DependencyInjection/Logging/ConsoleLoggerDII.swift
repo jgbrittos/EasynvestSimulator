@@ -41,11 +41,7 @@ class ConsoleLoggerDII: JGLogger {
 
         logBuilder!.set(header: nil)
 
-        if !messages.isEmpty {
-            logBuilder!.set(logs: messages)
-        } else {
-            logBuilder!.set("No messages available")
-        }
+        logBuilder!.set(logs: messages)
 
         print(logBuilder!.set(footer: nil).build())
     }

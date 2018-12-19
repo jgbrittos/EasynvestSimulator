@@ -267,10 +267,9 @@
 			children = (
 				C3F2E38421C7F9B700273C8E /* FormScene */,
 				C3F2E38021C7E09A00273C8E /* SimulationViewCotrollerTests.swift */,
-				C3F2E38521C7F9C600273C8E /* Helpers */,
+				C3D0255421CA6B8C00E79AE2 /* DependencyInjection */,
 				C3A58F1621C94ACC00A32E1B /* Extensions */,
-				C3F2E38221C7ECE600273C8E /* NetworkDIITests.swift */,
-				C3A58F1221C938DC00A32E1B /* ConsoleLoggerDIITests.swift */,
+				C3F2E38521C7F9C600273C8E /* Helpers */,
 				C3F2E38621C7F9E000273C8E /* Supporting Files */,
 				C382F76221C4379500886836 /* Info.plist */,
 			);
@@ -302,6 +301,15 @@
 				C3A58F1021C92DE500A32E1B /* UIViewControllerExtensionTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3D0255421CA6B8C00E79AE2 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				C3F2E38221C7ECE600273C8E /* NetworkDIITests.swift */,
+				C3A58F1221C938DC00A32E1B /* ConsoleLoggerDIITests.swift */,
+			);
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 		C3F2E38421C7F9B700273C8E /* FormScene */ = {

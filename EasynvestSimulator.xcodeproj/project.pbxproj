@@ -41,7 +41,7 @@
 		C397792F21C5AACD00CA2D45 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397792E21C5AACD00CA2D45 /* String+Extension.swift */; };
 		C3A58F1121C92DE500A32E1B /* UIViewControllerExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A58F1021C92DE500A32E1B /* UIViewControllerExtensionTests.swift */; };
 		C3A58F1321C938DC00A32E1B /* ConsoleLoggerDIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A58F1221C938DC00A32E1B /* ConsoleLoggerDIITests.swift */; };
-		C3F2E38121C7E09A00273C8E /* SimulationViewCotrollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E38021C7E09A00273C8E /* SimulationViewCotrollerTests.swift */; };
+		C3F2E38121C7E09A00273C8E /* SimulationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E38021C7E09A00273C8E /* SimulationViewControllerTests.swift */; };
 		C3F2E38321C7ECE600273C8E /* NetworkDIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E38221C7ECE600273C8E /* NetworkDIITests.swift */; };
 		FF8D3928B7DE06F1164E0F5B /* Pods_EasynvestSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5012EFFBD9C677420471625E /* Pods_EasynvestSimulator.framework */; };
 /* End PBXBuildFile section */
@@ -98,7 +98,7 @@
 		C397792E21C5AACD00CA2D45 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		C3A58F1021C92DE500A32E1B /* UIViewControllerExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionTests.swift; sourceTree = "<group>"; };
 		C3A58F1221C938DC00A32E1B /* ConsoleLoggerDIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLoggerDIITests.swift; sourceTree = "<group>"; };
-		C3F2E38021C7E09A00273C8E /* SimulationViewCotrollerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewCotrollerTests.swift; sourceTree = "<group>"; };
+		C3F2E38021C7E09A00273C8E /* SimulationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewControllerTests.swift; sourceTree = "<group>"; };
 		C3F2E38221C7ECE600273C8E /* NetworkDIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDIITests.swift; sourceTree = "<group>"; };
 		E3471DC99ACC73848DBE0B13 /* Pods_EasynvestSimulatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasynvestSimulatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -266,7 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				C3F2E38421C7F9B700273C8E /* FormScene */,
-				C3F2E38021C7E09A00273C8E /* SimulationViewCotrollerTests.swift */,
+				C3F2E38021C7E09A00273C8E /* SimulationViewControllerTests.swift */,
 				C3D0255421CA6B8C00E79AE2 /* DependencyInjection */,
 				C3A58F1621C94ACC00A32E1B /* Extensions */,
 				C3F2E38521C7F9C600273C8E /* Helpers */,
@@ -523,7 +523,7 @@
 				C340E14821C6EDF100E6D9DC /* FormatterHelperTests.swift in Sources */,
 				C337421C21C70FF400735EAF /* MaskHelperTests.swift in Sources */,
 				C337422021C7174800735EAF /* FormInteractorTests.swift in Sources */,
-				C3F2E38121C7E09A00273C8E /* SimulationViewCotrollerTests.swift in Sources */,
+				C3F2E38121C7E09A00273C8E /* SimulationViewControllerTests.swift in Sources */,
 				C3A58F1321C938DC00A32E1B /* ConsoleLoggerDIITests.swift in Sources */,
 				C340E14621C6E04A00E6D9DC /* FormWorkerTests.swift in Sources */,
 			);

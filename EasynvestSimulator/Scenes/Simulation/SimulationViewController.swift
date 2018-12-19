@@ -28,12 +28,48 @@ class SimulationViewController: UIViewController {
     @IBOutlet weak var annualGrossRateProfitLabel: UILabel!
     @IBOutlet weak var rateProfitLabel: UILabel!
 
+    @IBOutlet var stackViewsCollection: [UIStackView]!
+
+    @IBOutlet weak var simulateAgainButton: UIButton!
     var simulation: Form.ViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         DispatchQueue.main.async {
+            self.simulateAgainButton.setTitle("Simular novamente", for: .normal)
+            self.textSizeChanged()
             self.displaySimulationDetail()
+        }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(textSizeChanged),
+                                               name: UIContentSizeCategory.didChangeNotification,
+                                               object: nil)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self,
+                                                  name: UIContentSizeCategory.didChangeNotification,
+                                                  object: nil)
+    }
+
+    @objc
+    func textSizeChanged() {
+        if UIApplication.shared.preferredContentSizeCategory > .extraExtraLarge {
+            for stack in self.stackViewsCollection {
+                stack.axis = .vertical
+            }
+            self.adjustLabelsText(with: .left)
+        } else {
+            for stack in self.stackViewsCollection {
+                stack.axis = .horizontal
+            }
+            self.adjustLabelsText()
         }
     }
 
@@ -43,6 +79,20 @@ class SimulationViewController: UIViewController {
         } else {
             self.showBlankView()
         }
+    }
+
+    func adjustLabelsText(with alignment: NSTextAlignment = .right) {
+        self.investedAmountLabel.textAlignment = alignment
+        self.grossAmountLabel.textAlignment = alignment
+        self.grossAmountProfitLabel.textAlignment = alignment
+        self.taxesAmountAndRateLabel.textAlignment = alignment
+        self.netAmountLabel.textAlignment = alignment
+        self.maturityDateLabel.textAlignment = alignment
+        self.maturityTotalDaysLabel.textAlignment = alignment
+        self.monthlyGrossRateProfitLabel.textAlignment = alignment
+        self.rateLabel.textAlignment = alignment
+        self.annualGrossRateProfitLabel.textAlignment = alignment
+        self.rateProfitLabel.textAlignment = alignment
     }
 
     func setupData() {

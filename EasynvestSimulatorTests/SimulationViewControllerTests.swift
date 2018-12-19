@@ -9,12 +9,12 @@
 import XCTest
 @testable import EasynvestSimulator
 
-class SimulationViewCotrollerTests: XCTestCase {
+class SimulationViewControllerTests: XCTestCase {
     var viewController: SimulationViewController!
     var window: UIWindow!
     var bundle: Bundle!
     var storyboard: UIStoryboard!
-    
+
     override func setUp() {
         super.setUp()
         window = UIWindow()

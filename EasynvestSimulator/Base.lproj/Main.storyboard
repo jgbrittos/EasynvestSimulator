@@ -227,15 +227,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YTd-tT-zsN">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor aplicado inicialmente" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-Bk-aaa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="226.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor aplicado inicialmente" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-Bk-aaa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="194" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 1.000,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PdJ-WT-oSV">
-                                                        <rect key="frame" x="231.5" y="0.0" width="56.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="R$ 1.000,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PdJ-WT-oSV">
+                                                        <rect key="frame" x="199" y="0.0" width="89" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -246,15 +246,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kdK-3I-dFr">
                                                 <rect key="frame" x="0.0" y="26" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor bruto do investimento" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3a-LD-Aem">
-                                                        <rect key="frame" x="0.0" y="0.0" width="226.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor bruto do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3a-LD-Aem">
+                                                        <rect key="frame" x="0.0" y="0.0" width="196" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 1.088,69" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vhT-b2-H7K">
-                                                        <rect key="frame" x="231.5" y="0.0" width="56.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="R$ 1.088,69" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vhT-b2-H7K">
+                                                        <rect key="frame" x="201" y="0.0" width="87" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -265,15 +265,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SVE-Mb-N0T">
                                                 <rect key="frame" x="0.0" y="52" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor do investimento" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRA-we-Oks">
-                                                        <rect key="frame" x="0.0" y="0.0" width="237.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor do rendimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRA-we-Oks">
+                                                        <rect key="frame" x="0.0" y="0.0" width="191.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 88,69" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsp-GB-nAm">
-                                                        <rect key="frame" x="242.5" y="0.0" width="45.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="R$ 88,69" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsp-GB-nAm">
+                                                        <rect key="frame" x="196.5" y="0.0" width="91.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -284,15 +284,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pLi-8E-56J">
                                                 <rect key="frame" x="0.0" y="78" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="IR sobre o investimento" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8q-SR-Iny">
-                                                        <rect key="frame" x="0.0" y="0.0" width="208.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="IR sobre o investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8q-SR-Iny">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 15,52(17,50%)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTJ-UH-8gk">
-                                                        <rect key="frame" x="213.5" y="0.0" width="74.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="R$ 15,52(17,50%)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTJ-UH-8gk">
+                                                        <rect key="frame" x="167.5" y="0.0" width="120.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -303,15 +303,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="i9p-rA-OQf">
                                                 <rect key="frame" x="0.0" y="104" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor líquido do investimento" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBm-DX-yt3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="228" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor líquido do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBm-DX-yt3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="201" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="R$ 1.073,57" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-G9-qwX">
-                                                        <rect key="frame" x="233" y="0.0" width="55" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="R$ 1.073,57" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-G9-qwX">
+                                                        <rect key="frame" x="206" y="0.0" width="82" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -320,12 +320,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="kdK-3I-dFr" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="Fem-yP-JMw"/>
-                                            <constraint firstItem="pLi-8E-56J" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="Jxg-St-h1Q"/>
-                                            <constraint firstItem="SVE-Mb-N0T" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="mx5-Ej-7co"/>
-                                            <constraint firstItem="i9p-rA-OQf" firstAttribute="height" secondItem="YTd-tT-zsN" secondAttribute="height" id="y7l-8s-Hp5"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="npa-IG-fRY">
                                         <rect key="frame" x="16" y="265" width="288" height="146"/>
@@ -333,15 +327,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Eg-ow-Uoq">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Data de resgate" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5H-G4-HkN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="230" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Data de resgate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5H-G4-HkN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="164.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="27/10/2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hjx-Hp-LXa">
-                                                        <rect key="frame" x="235" y="0.0" width="53" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="27/10/2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hjx-Hp-LXa">
+                                                        <rect key="frame" x="169.5" y="0.0" width="118.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -352,15 +346,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v1K-IP-tGm">
                                                 <rect key="frame" x="0.0" y="26" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Dias corridos" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OI5-yn-LP2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="261" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Dias corridos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OI5-yn-LP2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="210.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="365" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HbW-Td-iUl">
-                                                        <rect key="frame" x="266" y="0.0" width="22" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="365" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HbW-Td-iUl">
+                                                        <rect key="frame" x="215.5" y="0.0" width="72.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -371,15 +365,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FVY-Xj-GcH">
                                                 <rect key="frame" x="0.0" y="52" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rendimento mensal" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9b-16-4uQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="251" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rendimento mensal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9b-16-4uQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="212.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="0,57%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNG-rj-srr">
-                                                        <rect key="frame" x="256" y="0.0" width="32" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0,57%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNG-rj-srr">
+                                                        <rect key="frame" x="217.5" y="0.0" width="70.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -390,15 +384,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dOl-la-P9K">
                                                 <rect key="frame" x="0.0" y="78" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Percentual do CDI do investimento" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21g-oe-VdN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="254.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Percentual do CDI do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21g-oe-VdN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="244" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="123%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LxR-qT-VVh">
-                                                        <rect key="frame" x="259.5" y="0.0" width="28.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="123%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LxR-qT-VVh">
+                                                        <rect key="frame" x="249" y="0.0" width="39" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -409,15 +403,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AQF-KB-ZCy">
                                                 <rect key="frame" x="0.0" y="104" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rentabilidade anual" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yjy-WZ-W3k">
-                                                        <rect key="frame" x="0.0" y="0.0" width="251.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rentabilidade anual" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yjy-WZ-W3k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="213.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="7,09%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBg-JS-w4K">
-                                                        <rect key="frame" x="256.5" y="0.0" width="31.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="7,09%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBg-JS-w4K">
+                                                        <rect key="frame" x="218.5" y="0.0" width="69.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -428,15 +422,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="91B-rC-299">
                                                 <rect key="frame" x="0.0" y="130" width="288" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rentabilidade no período" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGp-fV-2wM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="250.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rentabilidade no período" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGp-fV-2wM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="224.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" text="8,87%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGh-Jn-0Il">
-                                                        <rect key="frame" x="255.5" y="0.0" width="32.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="8,87%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGh-Jn-0Il">
+                                                        <rect key="frame" x="229.5" y="0.0" width="58.5" height="16"/>
                                                         <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -445,21 +439,14 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="v1K-IP-tGm" firstAttribute="height" secondItem="4Eg-ow-Uoq" secondAttribute="height" id="Gxy-Hs-bfr"/>
-                                            <constraint firstItem="AQF-KB-ZCy" firstAttribute="height" secondItem="4Eg-ow-Uoq" secondAttribute="height" id="QD1-GT-eZI"/>
-                                            <constraint firstItem="91B-rC-299" firstAttribute="height" secondItem="4Eg-ow-Uoq" secondAttribute="height" id="Rti-18-eN2"/>
-                                            <constraint firstItem="FVY-Xj-GcH" firstAttribute="height" secondItem="4Eg-ow-Uoq" secondAttribute="height" id="kWR-aJ-4SR"/>
-                                            <constraint firstItem="dOl-la-P9K" firstAttribute="height" secondItem="4Eg-ow-Uoq" secondAttribute="height" id="z4A-fQ-3M2"/>
-                                        </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-re-iaT">
-                                        <rect key="frame" x="20" y="441" width="280" height="40"/>
+                                        <rect key="frame" x="16" y="441" width="288" height="40"/>
                                         <color key="backgroundColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="0de-nO-cso"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <state key="normal" title="Simular novamente">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -476,18 +463,19 @@
                                 <constraints>
                                     <constraint firstItem="npa-IG-fRY" firstAttribute="centerX" secondItem="Jgg-5R-Tgk" secondAttribute="centerX" id="2MY-Oh-FP7"/>
                                     <constraint firstItem="7fJ-eY-ebh" firstAttribute="top" secondItem="zsp-NY-Wdo" secondAttribute="bottom" constant="30" id="3P6-Ta-9Ho"/>
+                                    <constraint firstAttribute="trailing" secondItem="7fJ-eY-ebh" secondAttribute="trailing" constant="16" id="46u-o5-DwY"/>
                                     <constraint firstItem="zsp-NY-Wdo" firstAttribute="centerX" secondItem="Jgg-5R-Tgk" secondAttribute="centerX" id="5Or-LM-nNn"/>
                                     <constraint firstItem="zsp-NY-Wdo" firstAttribute="top" secondItem="Jgg-5R-Tgk" secondAttribute="top" constant="20" id="Eaa-UG-rYR"/>
                                     <constraint firstItem="RRt-re-iaT" firstAttribute="top" secondItem="npa-IG-fRY" secondAttribute="bottom" constant="30" id="IaB-hn-FgV"/>
                                     <constraint firstItem="7fJ-eY-ebh" firstAttribute="width" secondItem="Jgg-5R-Tgk" secondAttribute="width" multiplier="0.9" id="LeK-14-EMx"/>
-                                    <constraint firstItem="RRt-re-iaT" firstAttribute="centerX" secondItem="Jgg-5R-Tgk" secondAttribute="centerX" id="Mpq-Ae-h2g"/>
                                     <constraint firstAttribute="bottom" secondItem="RRt-re-iaT" secondAttribute="bottom" constant="20" id="OQM-Kl-1Yz"/>
-                                    <constraint firstItem="RRt-re-iaT" firstAttribute="leading" secondItem="Jgg-5R-Tgk" secondAttribute="leading" constant="20" id="VK4-I2-5Eu"/>
+                                    <constraint firstItem="RRt-re-iaT" firstAttribute="centerX" secondItem="Jgg-5R-Tgk" secondAttribute="centerX" id="bDH-HI-Kbn"/>
                                     <constraint firstItem="7fJ-eY-ebh" firstAttribute="centerX" secondItem="Jgg-5R-Tgk" secondAttribute="centerX" id="dTs-Zh-gpo"/>
-                                    <constraint firstItem="npa-IG-fRY" firstAttribute="width" secondItem="7fJ-eY-ebh" secondAttribute="width" id="huk-FS-gsP"/>
-                                    <constraint firstAttribute="trailing" secondItem="RRt-re-iaT" secondAttribute="trailing" constant="20" id="iaL-Xj-E3v"/>
+                                    <constraint firstItem="RRt-re-iaT" firstAttribute="width" secondItem="Jgg-5R-Tgk" secondAttribute="width" multiplier="0.9" id="hBT-mF-diF"/>
+                                    <constraint firstItem="npa-IG-fRY" firstAttribute="width" secondItem="Jgg-5R-Tgk" secondAttribute="width" multiplier="0.9" id="huk-FS-gsP"/>
                                     <constraint firstItem="npa-IG-fRY" firstAttribute="top" secondItem="7fJ-eY-ebh" secondAttribute="bottom" constant="30" id="nL7-C4-JaP"/>
-                                    <constraint firstItem="zsp-NY-Wdo" firstAttribute="width" secondItem="7fJ-eY-ebh" secondAttribute="width" id="qyL-9u-1YY"/>
+                                    <constraint firstItem="zsp-NY-Wdo" firstAttribute="width" secondItem="Jgg-5R-Tgk" secondAttribute="width" multiplier="0.9" id="qyL-9u-1YY"/>
+                                    <constraint firstItem="7fJ-eY-ebh" firstAttribute="leading" secondItem="Jgg-5R-Tgk" secondAttribute="leading" constant="16" id="yrp-Ib-ZDt"/>
                                 </constraints>
                             </scrollView>
                         </subviews>

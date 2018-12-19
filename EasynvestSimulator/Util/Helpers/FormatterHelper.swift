@@ -42,8 +42,11 @@ class FormatterHelper {
         let gray = UIColor(named: "Gray")!
         let green = UIColor(named: "Green")!
 
-        let grayText: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: gray]
-        let greenText: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: green]
+        let font = UIFont.preferredFont(forTextStyle: .caption1)
+        let grayText: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: gray,
+                                                       NSAttributedString.Key.font: font]
+        let greenText: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: green,
+                                                        NSAttributedString.Key.font: font]
 
         let attributedFixedText = NSMutableAttributedString(attributedString: NSAttributedString(string: fixedText))
         attributedFixedText.addAttributes(grayText, range: NSRange(location: 0, length: attributedFixedText.length))

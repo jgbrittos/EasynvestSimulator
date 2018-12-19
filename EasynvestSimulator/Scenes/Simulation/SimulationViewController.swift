@@ -33,20 +33,11 @@ class SimulationViewController: UIViewController {
     @IBOutlet weak var simulateAgainButton: UIButton!
     var simulation: Form.ViewModel?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        DispatchQueue.main.async {
-            self.simulateAgainButton.setTitle("Simular novamente", for: .normal)
-            self.textSizeChanged()
-            self.displaySimulationDetail()
-        }
-    }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.prepareView()
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(textSizeChanged),
+                                               selector: #selector(prepareView),
                                                name: UIContentSizeCategory.didChangeNotification,
                                                object: nil)
     }
@@ -59,17 +50,20 @@ class SimulationViewController: UIViewController {
     }
 
     @objc
-    func textSizeChanged() {
-        if UIApplication.shared.preferredContentSizeCategory > .extraExtraLarge {
-            for stack in self.stackViewsCollection {
-                stack.axis = .vertical
+    func prepareView() {
+        DispatchQueue.main.async {
+            if UIApplication.shared.preferredContentSizeCategory > .extraExtraLarge {
+                for stack in self.stackViewsCollection {
+                    stack.axis = .vertical
+                }
+                self.adjustLabelsText(with: .left)
+            } else {
+                for stack in self.stackViewsCollection {
+                    stack.axis = .horizontal
+                }
+                self.adjustLabelsText()
             }
-            self.adjustLabelsText(with: .left)
-        } else {
-            for stack in self.stackViewsCollection {
-                stack.axis = .horizontal
-            }
-            self.adjustLabelsText()
+            self.displaySimulationDetail()
         }
     }
 

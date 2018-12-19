@@ -98,8 +98,8 @@ class FormViewController: UIViewController, FormDisplayLogic {
 // MARK: FormDisplayLogic
 extension FormViewController {
     func displaySimulation(viewModel: Form.ViewModel) {
-        self.stopLoading()
         self.router?.routeToSimulationResult(viewModel: viewModel)
+        self.stopLoading()
         self.simulateButton.isEnabled = true
     }
 

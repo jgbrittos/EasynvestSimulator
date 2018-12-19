@@ -200,21 +200,18 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Resultado da simulação" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QuU-lo-m55">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                 <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="R$ 1.088,69" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDe-I9-KHe">
                                                 <rect key="frame" x="0.0" y="14.5" width="288" height="36"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rendimento total de R$ 88,69" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p9D-pi-QIY">
                                                 <rect key="frame" x="0.0" y="50.5" width="288" height="14.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                 <color key="textColor" red="0.76470588240000004" green="0.79215686269999996" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -229,14 +226,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor aplicado inicialmente" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-Bk-aaa">
                                                         <rect key="frame" x="0.0" y="0.0" width="194" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="R$ 1.000,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PdJ-WT-oSV">
                                                         <rect key="frame" x="199" y="0.0" width="89" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -248,14 +243,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor bruto do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3a-LD-Aem">
                                                         <rect key="frame" x="0.0" y="0.0" width="196" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="R$ 1.088,69" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vhT-b2-H7K">
                                                         <rect key="frame" x="201" y="0.0" width="87" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -286,14 +279,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="IR sobre o investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8q-SR-Iny">
                                                         <rect key="frame" x="0.0" y="0.0" width="162.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="R$ 15,52(17,50%)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTJ-UH-8gk">
                                                         <rect key="frame" x="167.5" y="0.0" width="120.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -305,14 +296,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Valor líquido do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBm-DX-yt3">
                                                         <rect key="frame" x="0.0" y="0.0" width="201" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="R$ 1.073,57" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-G9-qwX">
                                                         <rect key="frame" x="206" y="0.0" width="82" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -329,14 +318,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Data de resgate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5H-G4-HkN">
                                                         <rect key="frame" x="0.0" y="0.0" width="164.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="27/10/2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hjx-Hp-LXa">
                                                         <rect key="frame" x="169.5" y="0.0" width="118.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -348,14 +335,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Dias corridos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OI5-yn-LP2">
                                                         <rect key="frame" x="0.0" y="0.0" width="210.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="365" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HbW-Td-iUl">
                                                         <rect key="frame" x="215.5" y="0.0" width="72.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -367,14 +352,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rendimento mensal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9b-16-4uQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="212.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0,57%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNG-rj-srr">
                                                         <rect key="frame" x="217.5" y="0.0" width="70.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -386,14 +369,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Percentual do CDI do investimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21g-oe-VdN">
                                                         <rect key="frame" x="0.0" y="0.0" width="244" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="123%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LxR-qT-VVh">
                                                         <rect key="frame" x="249" y="0.0" width="39" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -405,14 +386,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rentabilidade anual" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yjy-WZ-W3k">
                                                         <rect key="frame" x="0.0" y="0.0" width="213.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="7,09%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBg-JS-w4K">
                                                         <rect key="frame" x="218.5" y="0.0" width="69.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -424,14 +403,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Rentabilidade no período" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGp-fV-2wM">
                                                         <rect key="frame" x="0.0" y="0.0" width="224.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" red="0.58431372550000005" green="0.59215686270000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="8,87%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGh-Jn-0Il">
                                                         <rect key="frame" x="229.5" y="0.0" width="58.5" height="16"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Quanto você gostaria de aplicar" identifier="investedAmountLabel" label="Texto"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -519,7 +496,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbe-fw-aHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="AOi-FB-pJ9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="837.60000000000002" y="132.68365817091455"/>
+            <point key="canvasLocation" x="836.25" y="132.04225352112675"/>
         </scene>
     </scenes>
 </document>

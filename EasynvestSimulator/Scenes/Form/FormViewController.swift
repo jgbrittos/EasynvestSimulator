@@ -62,10 +62,8 @@ class FormViewController: UIViewController, FormDisplayLogic {
 
     // MARK: View Actions
     @IBAction func simulate(_ sender: Any) {
-        DispatchQueue.main.async {
-            self.loading.startAnimating()
-            self.simulateButton.isEnabled = false
-        }
+        self.loading.startAnimating()
+        self.simulateButton.isEnabled = false
 
         let investedAmount = investedAmountTextField.text
         let maturityDate = maturityDateTextField.text

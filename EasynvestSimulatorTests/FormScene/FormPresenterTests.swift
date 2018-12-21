@@ -2,8 +2,8 @@
 //  FormPresenterTests.swift
 //  EasynvestSimulatorTests
 //
-//  Created by João Gabriel on 17/12/18.
-//  Copyright © 2018 João Gabriel de Britto e Silva. All rights reserved.
+//  Created by João Gabriel on 14/12/18.
+//  Copyright (c) 2018 João Gabriel de Britto e Silva. All rights reserved.
 //
 
 import XCTest

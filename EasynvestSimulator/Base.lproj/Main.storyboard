@@ -74,7 +74,7 @@
                                                     <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="dia/mês/ano" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMP-Pi-ZF4">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="36"/>
                                                         <color key="tintColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <accessibility key="accessibilityConfiguration" identifier="maturytiDate" label="Informe a data de vencimento"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="maturityDate" label="Informe a data de vencimento"/>
                                                         <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -111,7 +111,7 @@
                                                     <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="100%" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-yP-U5T">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="36"/>
                                                         <color key="tintColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <accessibility key="accessibilityConfiguration" identifier="rateLabel" label="Informe a taxa do CDI em porcentagem"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="rate" label="Informe a taxa do CDI em porcentagem"/>
                                                         <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -137,7 +137,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuR-W9-cbC">
                                 <rect key="frame" x="30" y="426.5" width="260" height="40"/>
                                 <color key="backgroundColor" red="0.76470588240000004" green="0.79215686269999996" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" hint="Botão para iniciar a simulação" label="Simular"/>
+                                <accessibility key="accessibilityConfiguration" hint="Botão para iniciar a simulação" identifier="simulateButton" label="Simular"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bjJ-0I-vAL"/>
                                 </constraints>
@@ -420,6 +420,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-re-iaT">
                                         <rect key="frame" x="16" y="441" width="288" height="40"/>
                                         <color key="backgroundColor" red="0.12549019610000001" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="simulateAgainButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="0de-nO-cso"/>
                                         </constraints>

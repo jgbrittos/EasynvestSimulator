@@ -1,0 +1,1 @@
+ios: mobile_env='ios' -r features/step_definitions -r features/support --format html --out report_ios.html --format pretty

@@ -1,0 +1,8 @@
+[caps]
+platformName = "iOS"
+deviceName = "iPhone 8 Plus"
+app = "features/config/EasynvestSimulator.app"
+bundleId = "br.com.jgbrittos.EasynvestSimulator"
+newCommandTimeout = 3600
+platformVersion = "12.1"
+showXcodeLog = true

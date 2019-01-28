@@ -7,6 +7,7 @@ target 'EasynvestSimulator' do
   # Pods for EasynvestSimulator
   pod 'SwiftLint'
   pod 'Embassy', '~> 4.0'
+  pod 'Instabug'
   
   target 'EasynvestSimulatorTests' do
       inherit! :complete

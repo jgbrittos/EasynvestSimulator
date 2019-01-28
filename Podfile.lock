@@ -1,20 +1,24 @@
 PODS:
   - Embassy (4.0.8)
+  - Instabug (8.0.17)
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
   - Embassy (~> 4.0)
+  - Instabug
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Embassy
+    - Instabug
     - SwiftLint
 
 SPEC CHECKSUMS:
   Embassy: fe6a3f8dd2d705881c172dcb144fb97b9408f4cd
+  Instabug: 399f0ce0ac407adcd157c4a0693918442b13d9c3
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 47568df8fbe2b6bde46e2c209311b44a3b84ab80
+PODFILE CHECKSUM: 3adeaf00219238491dfa6810782671cea3c1fc25
 
 COCOAPODS: 1.5.3

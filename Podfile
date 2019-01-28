@@ -6,5 +6,10 @@ target 'EasynvestSimulator' do
 
   # Pods for EasynvestSimulator
   pod 'SwiftLint'
+  pod 'Embassy', '~> 4.0'
+  
+  target 'EasynvestSimulatorTests' do
+      inherit! :complete
+  end
   
 end

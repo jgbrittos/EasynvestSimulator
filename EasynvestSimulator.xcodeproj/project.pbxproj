@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FE862FD5C9FBA75C1AB3361 /* Pods_EasynvestSimulator_EasynvestSimulatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FA4F3530E0D385DA47A323 /* Pods_EasynvestSimulator_EasynvestSimulatorTests.framework */; };
+		7159859721FF123C0008C4CC /* MockWebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7159859621FF123C0008C4CC /* MockWebServer.swift */; };
+		7159859921FF22900008C4CC /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7159859821FF21780008C4CC /* mockData.json */; };
+		7159859D21FF29990008C4CC /* MockWebServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7159859C21FF29990008C4CC /* MockWebServerTests.swift */; };
 		C3318C9021C45C680038CB5E /* FormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8A21C45C670038CB5E /* FormPresenter.swift */; };
 		C3318C9121C45C680038CB5E /* FormWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8B21C45C670038CB5E /* FormWorker.swift */; };
 		C3318C9221C45C680038CB5E /* FormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3318C8C21C45C670038CB5E /* FormRouter.swift */; };
@@ -58,7 +62,13 @@
 
 /* Begin PBXFileReference section */
 		35060C5265DB3BD8D388BF71 /* Pods-EasynvestSimulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestSimulator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator.debug.xcconfig"; sourceTree = "<group>"; };
+		37AD26637A7F3624E401FB16 /* Pods-EasynvestSimulator-EasynvestSimulatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestSimulator-EasynvestSimulatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestSimulator-EasynvestSimulatorTests/Pods-EasynvestSimulator-EasynvestSimulatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		5012EFFBD9C677420471625E /* Pods_EasynvestSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasynvestSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5481B9D2FA1FEC93B1C9A530 /* Pods-EasynvestSimulator-EasynvestSimulatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestSimulator-EasynvestSimulatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestSimulator-EasynvestSimulatorTests/Pods-EasynvestSimulator-EasynvestSimulatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7159859621FF123C0008C4CC /* MockWebServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebServer.swift; sourceTree = "<group>"; };
+		7159859821FF21780008C4CC /* mockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockData.json; sourceTree = "<group>"; };
+		7159859C21FF29990008C4CC /* MockWebServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebServerTests.swift; sourceTree = "<group>"; };
+		98FA4F3530E0D385DA47A323 /* Pods_EasynvestSimulator_EasynvestSimulatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasynvestSimulator_EasynvestSimulatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14250A479C03D274715FCC9 /* Pods-EasynvestSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasynvestSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator.release.xcconfig"; sourceTree = "<group>"; };
 		C3318C8A21C45C670038CB5E /* FormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenter.swift; sourceTree = "<group>"; };
 		C3318C8B21C45C670038CB5E /* FormWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormWorker.swift; sourceTree = "<group>"; };
@@ -116,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE862FD5C9FBA75C1AB3361 /* Pods_EasynvestSimulator_EasynvestSimulatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +138,8 @@
 			children = (
 				35060C5265DB3BD8D388BF71 /* Pods-EasynvestSimulator.debug.xcconfig */,
 				A14250A479C03D274715FCC9 /* Pods-EasynvestSimulator.release.xcconfig */,
+				5481B9D2FA1FEC93B1C9A530 /* Pods-EasynvestSimulator-EasynvestSimulatorTests.debug.xcconfig */,
+				37AD26637A7F3624E401FB16 /* Pods-EasynvestSimulator-EasynvestSimulatorTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -136,6 +149,7 @@
 			children = (
 				5012EFFBD9C677420471625E /* Pods_EasynvestSimulator.framework */,
 				E3471DC99ACC73848DBE0B13 /* Pods_EasynvestSimulatorTests.framework */,
+				98FA4F3530E0D385DA47A323 /* Pods_EasynvestSimulator_EasynvestSimulatorTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -272,6 +286,9 @@
 				C3F2E38521C7F9C600273C8E /* Helpers */,
 				C3F2E38621C7F9E000273C8E /* Supporting Files */,
 				C382F76221C4379500886836 /* Info.plist */,
+				7159859C21FF29990008C4CC /* MockWebServerTests.swift */,
+				7159859621FF123C0008C4CC /* MockWebServer.swift */,
+				7159859821FF21780008C4CC /* mockData.json */,
 			);
 			path = EasynvestSimulatorTests;
 			sourceTree = "<group>";
@@ -352,6 +369,7 @@
 				C382F74521C4379300886836 /* Frameworks */,
 				C382F74621C4379300886836 /* Resources */,
 				C3318C8621C439510038CB5E /* SwiftLint Script */,
+				7B4F387063954D6DAF523BCA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -366,9 +384,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C382F76821C4379500886836 /* Build configuration list for PBXNativeTarget "EasynvestSimulatorTests" */;
 			buildPhases = (
+				7ACEA046A5D0DBD5209C7027 /* [CP] Check Pods Manifest.lock */,
 				C382F75821C4379500886836 /* Sources */,
 				C382F75921C4379500886836 /* Frameworks */,
 				C382F75A21C4379500886836 /* Resources */,
+				7647F18C5AEF48E8198A6F3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -433,6 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7159859921FF22900008C4CC /* mockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +482,72 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7647F18C5AEF48E8198A6F3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasynvestSimulator-EasynvestSimulatorTests/Pods-EasynvestSimulator-EasynvestSimulatorTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Embassy/Embassy.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Embassy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasynvestSimulator-EasynvestSimulatorTests/Pods-EasynvestSimulator-EasynvestSimulatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ACEA046A5D0DBD5209C7027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasynvestSimulator-EasynvestSimulatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B4F387063954D6DAF523BCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Embassy/Embassy.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Embassy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasynvestSimulator/Pods-EasynvestSimulator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C3318C8621C439510038CB5E /* SwiftLint Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,7 +564,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "#\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -519,11 +606,13 @@
 				C3A58F1121C92DE500A32E1B /* UIViewControllerExtensionTests.swift in Sources */,
 				C34D259C21C7FFA80046AF9E /* FormViewControllerTests.swift in Sources */,
 				C337421E21C711D700735EAF /* StringExtensionTests.swift in Sources */,
+				7159859D21FF29990008C4CC /* MockWebServerTests.swift in Sources */,
 				C337422621C7C67F00735EAF /* TestSeeds.swift in Sources */,
 				C340E14821C6EDF100E6D9DC /* FormatterHelperTests.swift in Sources */,
 				C337421C21C70FF400735EAF /* MaskHelperTests.swift in Sources */,
 				C337422021C7174800735EAF /* FormInteractorTests.swift in Sources */,
 				C3F2E38121C7E09A00273C8E /* SimulationViewControllerTests.swift in Sources */,
+				7159859721FF123C0008C4CC /* MockWebServer.swift in Sources */,
 				C3A58F1321C938DC00A32E1B /* ConsoleLoggerDIITests.swift in Sources */,
 				C340E14621C6E04A00E6D9DC /* FormWorkerTests.swift in Sources */,
 			);
@@ -717,6 +806,7 @@
 		};
 		C382F76921C4379500886836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5481B9D2FA1FEC93B1C9A530 /* Pods-EasynvestSimulator-EasynvestSimulatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -738,6 +828,7 @@
 		};
 		C382F76A21C4379500886836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37AD26637A7F3624E401FB16 /* Pods-EasynvestSimulator-EasynvestSimulatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
